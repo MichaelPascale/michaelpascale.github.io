@@ -1,0 +1,81 @@
+---
+title: "Michael P. Pascale"
+subtitle: Cognitive Psychology | Research Software Development
+image: assets/profile.png
+about:
+  template: solana
+  image-width: 8em
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/MichaelPascale
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=jSGgb-QAAAAJ&hl=en&oi=ao
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/mpascale00
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/mpascale00
+    - icon: envelope-fill
+      text: Email
+      href: mailto:mpascale@bu.edu
+    - icon: key-fill
+      text: OpenPGP
+      href: assets/mpascale-2021-2027.pub.asc
+---
+
+## Education
+
+**Bachelor of Science - Computer Science (2020)**\
+Psychology and Mathematics Minors\
+[University of Massachusetts Lowell](https://www.uml.edu/)
+
+## Experience
+
++------------------------------------------------------------------------------------+-------------------------------+
+| **Massachusetts General Hospital**\                                                | Programmer \                  |
+| [Center For Addiction Medicine](http://www.mghaddictionmedicine.com/)              | March 2021 --- July 2022      |
++------------------------------------------------------------------------------------+-------------------------------+
+| **University of Massachusetts Lowell**\                                            | Programmer\                   |
+| [Applied Cognition Lab](https://mikowilford.wixsite.com/website-2)                 | May 2020 --- May 2021         |
++------------------------------------------------------------------------------------+-------------------------------+
+| **University of New Hampshire**\                                                   | Research Assistant\           |
+| [Affect, Cognition and Computation Lab](https://caitlinsmills.wixsite.com/acc-lab) | September 2020 --- March 2021 |
++------------------------------------------------------------------------------------+-------------------------------+
+| **University of Massachusetts Lowell**\                                            | Research Assistant\           |
+| [Applied Cognition Lab](https://mikowilford.wixsite.com/website-2)                 | January 2020 --- May 2020     |
++------------------------------------------------------------------------------------+-------------------------------+
+| **Teledyne Technologies Inc.\                                                      | Software Engineer Intern\     |
+| **[Teledyne DALSA](#0)                                                             | June 2019 --- September 2019  |
++------------------------------------------------------------------------------------+-------------------------------+
+
+## Research Interests
+
+-   Acquisition of Social, Causal, and Metacognitive Beliefs Throughout the Lifespan
+
+-   The Role of Beliefs in Learning and Health, Science, and Political Decision-Making
+
+-   Computational and Comparative Models, Quantitative Methodology, Statistical Inference
+
+-   Epistemology, Ethics, Development of Morality
+
+-   Philosophy of Science, Science Communication, Education, and Policy
+
+## Technical Skills
+
+-   **Computer Programming**\
+    R, JavaScript, C, C++, Python
+
+-   **Data Wrangling**\
+    Tidyverse, Excel, Pandas, SQL
+
+-   **Data Visualization**\
+    ggplot2, Three.js
+
+-   **Web Development**\
+    HTML/CSS, Shiny, Django, Vue, PHP, Express
+
+-   **Electronic Data Collection**\
+    REDCap, Qualtrics, PsychoPy, E-Prime

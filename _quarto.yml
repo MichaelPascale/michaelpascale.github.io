@@ -1,0 +1,6 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  page-footer: "Copyright &copy; 2018 - 2023, Michael Pascale. All rights reserved."
