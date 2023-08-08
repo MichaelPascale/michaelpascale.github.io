@@ -3,4 +3,14 @@ project:
   output-dir: docs
   
 website:
+  search: false
+  navbar:
+    left:
+      - text: "About Me"
+        file: index.qmd
+      # - reading-list.qmd
   page-footer: "Copyright &copy; 2018 - 2023, Michael Pascale. All rights reserved."
+
+format:
+  html:
+    theme: simplex
