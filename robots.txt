@@ -1,1 +1,1 @@
-Sitemap: https://blog.psyc.dev/sitemap.xml
+Sitemap: https://www.psyc.dev/sitemap.xml
