@@ -1,6 +1,6 @@
 ---
 title: "Michael P. Pascale"
-subtitle: Cognitive Psychology | Research Software Development
+subtitle: Cognitive Psychology | Data Science | Research Software
 image: assets/profile.png
 about:
   template: solana
@@ -35,8 +35,8 @@ Psychology and Mathematics Minors\
 ## Experience
 
 +------------------------------------------------------------------------------------+-------------------------------+
-| **Massachusetts General Hospital**\                                                | Programmer \                  |
-| [Center For Addiction Medicine](http://www.mghaddictionmedicine.com/)              | March 2021 --- July 2022      |
+| **Massachusetts General Hospital**\                                                | Programmer\                   |
+| [Center For Addiction Medicine](http://www.mghaddictionmedicine.com/)              | March 2021 --- July 2023      |
 +------------------------------------------------------------------------------------+-------------------------------+
 | **University of Massachusetts Lowell**\                                            | Programmer\                   |
 | [Applied Cognition Lab](https://mikowilford.wixsite.com/website-2)                 | May 2020 --- May 2021         |
