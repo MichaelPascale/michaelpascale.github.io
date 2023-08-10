@@ -3,7 +3,10 @@ project:
   output-dir: docs
   
 website:
+  title: Michael P. Pascale
+  description: "This is a personal web space, blog, and portfolio site belonging to Michael Pascale, Programmer at the MGH Center for Addiction Medicine. Looking for software development or research services? Email an inquiry!"
   search: false
+  reader-mode: true
   navbar:
     left:
       - text: "About Me"
