@@ -19,11 +19,46 @@ about:
       text: Twitter
       href: https://twitter.com/mpascale00
     - icon: envelope-fill
-      text: Email
-      href: mailto:mpascale@bu.edu
+      text: <span id="email-button-text">Email</span>
     - icon: key-fill
       text: OpenPGP
       href: assets/mpascale-2021-2027.pub.asc
+format:
+  html:
+    include-in-header:
+      text: |
+        <style>
+          dialog {
+            border-radius: 10px;
+            border-color: transparent;
+          }
+          dialog::backdrop {
+            opacity: .8;
+            background-color: black;
+          }
+        </style>
+        <dialog id="email-dialog">  
+          <p>You can reach me at either of the following addresses.</p>
+          <p>For academic and research matters:</p>
+          <pre>    mpascale [AT] bu [DOT] edu</pre>
+          <p>For all other personal and professional matters:</p>
+          <pre>    mpascale [AT] psyc [DOT] dev</pre>
+          <form method="dialog">
+            <div class="d-grid mt-4">
+              <button class="btn btn-outline-dark btn-sm float-end">
+                <i class="me-1 bi bi-send-check-fill"></i>
+                <span>Okay, got it!</span>
+              </button>
+            </div>
+          </form>
+        </dialog>
+        <script>
+          document.addEventListener("DOMContentLoaded", function(event) {
+            const about_link_email = document.getElementById('email-button-text').closest('a.about-link');
+            about_link_email.removeAttribute('href');
+            about_link_email.onclick = function (ev) { document.getElementById('email-dialog').showModal() };
+          });
+        </script>
 ---
 
 ## Education
@@ -48,7 +83,7 @@ Psychology and Mathematics Minors\
 | [Applied Cognition Lab](https://mikowilford.wixsite.com/website-2)                 | January 2020 --- May 2020     |
 +------------------------------------------------------------------------------------+-------------------------------+
 | **Teledyne Technologies Inc.\                                                      | Software Engineer Intern\     |
-| **[Teledyne DALSA](#0)                                                             | June 2019 --- September 2019  |
+| **[Teledyne DALSA](https://www.teledynedalsa.com/)                                 | June 2019 --- September 2019  |
 +------------------------------------------------------------------------------------+-------------------------------+
 
 ## Research Interests

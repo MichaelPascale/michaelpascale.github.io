@@ -16,4 +16,5 @@ website:
 
 format:
   html:
+    resources: assets/*
     theme: simplex
