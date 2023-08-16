@@ -48,11 +48,43 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+  dialog {
+    border-radius: 10px;
+    border-color: transparent;
+  }
+  dialog::backdrop {
+    opacity: .8;
+    background-color: black;
+  }
+</style>
+</head><body class="nav-fixed fullcontent"><dialog id="email-dialog">
+  <p>You can reach me at either of the following addresses.</p>
+  <p>For academic and research matters:</p>
+  <pre>    mpascale [AT] bu [DOT] edu</pre>
+  <p>For all other personal and professional matters:</p>
+  <pre>    mpascale [AT] psyc [DOT] dev</pre>
+  <form method="dialog">
+    <div class="d-grid mt-4">
+      <button class="btn btn-outline-dark btn-sm float-end">
+        <i class="me-1 bi bi-send-check-fill"></i>
+        <span>Okay, got it!</span>
+      </button>
+    </div>
+  </form>
+</dialog>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    const about_link_email = document.getElementById('email-button-text').closest('a.about-link');
+    about_link_email.removeAttribute('href');
+    about_link_email.onclick = function (ev) { document.getElementById('email-dialog').showModal() };
+  });
+</script>
 
 
-</head>
 
-<body class="nav-fixed fullcontent">
+
+
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -117,9 +149,9 @@ ul.task-list li input[type="checkbox"] {
     <i class="bi bi-twitter"></i>
      <span class="about-link-text">Twitter</span>
   </a>
-  <a href="mailto:mpascale@bu.edu" class="about-link" rel="" target="">
+  <a href="" class="about-link" rel="" target="">
     <i class="bi bi-envelope-fill"></i>
-     <span class="about-link-text">Email</span>
+     <span class="about-link-text"><span id="email-button-text">Email</span></span>
   </a>
   <a href="/assets/mpascale-2021-2027.pub.asc" class="about-link" rel="" target="">
     <i class="bi bi-key-fill"></i>
@@ -163,7 +195,7 @@ January 2020 — May 2020</td>
 </tr>
 <tr class="odd">
 <td><strong>Teledyne Technologies Inc.<br>
-</strong><a href="#0">Teledyne DALSA</a></td>
+</strong><a href="https://www.teledynedalsa.com/">Teledyne DALSA</a></td>
 <td>Software Engineer Intern<br>
 June 2019 — September 2019</td>
 </tr>
