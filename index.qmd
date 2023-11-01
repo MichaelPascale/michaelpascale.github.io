@@ -61,13 +61,26 @@ format:
         </script>
 ---
 
+Hello! I am a first year doctoral student in the Cognition and Decision Lab at Boston University.
+
+My research is concerned with decision-making in the context of [information behavior](https://en.wikipedia.org/wiki/Information_behavior), which I approach from the perspective of cognitive neuroscience.
+This primarily includes [information seeking](https://en.wikipedia.org/wiki/Information_seeking) and how it is influenced by curiosity and processes of information valuation.
+I am particularly interested [social epistemology](https://en.wikipedia.org/wiki/Social_epistemology) and the the acquisition of knowledge as a human
+[social endeavour](https://en.wikipedia.org/wiki/Sociology_of_scientific_knowledge).
+
+I also contribute to open source software in the social sciences.
+
 ## Education
+
+**Doctoral Student - Psychology (Current)**\
+PhD Program in Brain, Behavior, and Cognition\
+[Boston University](https://www.bu.edu/psych/)
 
 **Bachelor of Science - Computer Science (2020)**\
 Psychology and Mathematics Minors\
 [University of Massachusetts Lowell](https://www.uml.edu/)
 
-## Experience
+## Previous Experience
 
 +------------------------------------------------------------------------------------+-------------------------------+
 | **Massachusetts General Hospital**\                                                | Programmer\                   |
@@ -85,18 +98,6 @@ Psychology and Mathematics Minors\
 | **Teledyne Technologies Inc.\                                                      | Software Engineer Intern\     |
 | **[Teledyne DALSA](https://www.teledynedalsa.com/)                                 | June 2019 --- September 2019  |
 +------------------------------------------------------------------------------------+-------------------------------+
-
-## Research Interests
-
--   Acquisition of Social, Causal, and Metacognitive Beliefs Throughout the Lifespan
-
--   The Role of Beliefs in Learning and Health, Science, and Political Decision-Making
-
--   Computational and Comparative Models, Quantitative Methodology, Statistical Inference
-
--   Epistemology, Ethics, Development of Morality
-
--   Philosophy of Science, Science Communication, Education, and Policy
 
 ## Technical Skills
 
