@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "blog/20230829-stationary-with-ggplot.html",
+    "href": "blog/20230829-stationary-with-ggplot.html",
+    "title": "Creating Office Stationary in R with ggplot2",
+    "section": "",
+    "text": "Often when reaching a milestone — say, just after the new year or upon starting a new job — I spend (more than) a few hours of time excitedly putting together calendars and note-taking systems, in the name of reorganizing my life. While this behavior is usually little more than procrastination, cleverly disguised as efficiency and probably serving my instant gratification monkey more than my long term goals, I like to think that it is at least somewhat a process of iterative and creative self-improvement. Most times I engage in this improvement, I buy a few pens and notebooks, a whiteboard, index cards, or other physical writing formats.\nWell, rather than spending hours of my life drawing, this time I decided to type.\nThe programming and graphics facilities provided by R make it an excellent choice for generation of scientific figures and reports. Certainly it wouldn’t be difficult to print custom calendars too?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Michael P. Pascale",
+    "section": "",
+    "text": "Hello! I am a first year doctoral student in the Cognition and Decision Lab at Boston University.\nMy research is concerned with decision-making in the context of information behavior, which I approach from the perspective of cognitive neuroscience. This primarily includes information seeking and how it is influenced by curiosity and processes of information valuation. I am particularly interested social epistemology and the the acquisition of knowledge as a human social endeavour.\nI also contribute to open source software in the social sciences."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Michael P. Pascale",
+    "section": "Education",
+    "text": "Education\nDoctoral Student - Psychology (Current)\nPhD Program in Brain, Behavior, and Cognition\nBoston University\nBachelor of Science - Computer Science (2020)\nPsychology and Mathematics Minors\nUniversity of Massachusetts Lowell"
+  },
+  {
+    "objectID": "index.html#previous-experience",
+    "href": "index.html#previous-experience",
+    "title": "Michael P. Pascale",
+    "section": "Previous Experience",
+    "text": "Previous Experience\n\n\n\nMassachusetts General Hospital\nCenter For Addiction Medicine\nProgrammer\nMarch 2021 — July 2023\n\n\nUniversity of Massachusetts Lowell\nApplied Cognition Lab\nProgrammer\nMay 2020 — May 2021\n\n\nUniversity of New Hampshire\nAffect, Cognition and Computation Lab\nResearch Assistant\nSeptember 2020 — March 2021\n\n\nUniversity of Massachusetts Lowell\nApplied Cognition Lab\nResearch Assistant\nJanuary 2020 — May 2020\n\n\nTeledyne Technologies Inc.\nTeledyne DALSA\nSoftware Engineer Intern\nJune 2019 — September 2019"
+  },
+  {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "Michael P. Pascale",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\nComputer Programming\nR, JavaScript, C, C++, Python\nData Wrangling\nTidyverse, Excel, Pandas, SQL\nData Visualization\nggplot2, Three.js\nWeb Development\nHTML/CSS, Shiny, Django, Vue, PHP, Express\nElectronic Data Collection\nREDCap, Qualtrics, PsychoPy, E-Prime"
+  },
+  {
     "objectID": "reading-list.html",
     "href": "reading-list.html",
     "title": "Reading List",
@@ -11,41 +46,6 @@
     "href": "reading-list.html#section",
     "title": "Reading List",
     "section": "2023",
-    "text": "2023\nTastes Like War\n\nDune\n\nA Life on Our Planet David Attenborough https://en.wikipedia.org/wiki/A_Life_on_Our_Planet\nCaste: The Origins of Our Discontents I Wilkerson\nEducated T.Westover."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Michael P. Pascale",
-    "section": "",
-    "text": "Bachelor of Science - Computer Science (2020)\nPsychology and Mathematics Minors\nUniversity of Massachusetts Lowell"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Michael P. Pascale",
-    "section": "",
-    "text": "Bachelor of Science - Computer Science (2020)\nPsychology and Mathematics Minors\nUniversity of Massachusetts Lowell"
-  },
-  {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Michael P. Pascale",
-    "section": "Experience",
-    "text": "Experience\n\n\n\nMassachusetts General Hospital\nCenter For Addiction Medicine\nProgrammer\nMarch 2021 — July 2023\n\n\nUniversity of Massachusetts Lowell\nApplied Cognition Lab\nProgrammer\nMay 2020 — May 2021\n\n\nUniversity of New Hampshire\nAffect, Cognition and Computation Lab\nResearch Assistant\nSeptember 2020 — March 2021\n\n\nUniversity of Massachusetts Lowell\nApplied Cognition Lab\nResearch Assistant\nJanuary 2020 — May 2020\n\n\nTeledyne Technologies Inc.\nTeledyne DALSA\nSoftware Engineer Intern\nJune 2019 — September 2019"
-  },
-  {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "Michael P. Pascale",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nAcquisition of Social, Causal, and Metacognitive Beliefs Throughout the Lifespan\nThe Role of Beliefs in Learning and Health, Science, and Political Decision-Making\nComputational and Comparative Models, Quantitative Methodology, Statistical Inference\nEpistemology, Ethics, Development of Morality\nPhilosophy of Science, Science Communication, Education, and Policy"
-  },
-  {
-    "objectID": "index.html#technical-skills",
-    "href": "index.html#technical-skills",
-    "title": "Michael P. Pascale",
-    "section": "Technical Skills",
-    "text": "Technical Skills\n\nComputer Programming\nR, JavaScript, C, C++, Python\nData Wrangling\nTidyverse, Excel, Pandas, SQL\nData Visualization\nggplot2, Three.js\nWeb Development\nHTML/CSS, Shiny, Django, Vue, PHP, Express\nElectronic Data Collection\nREDCap, Qualtrics, PsychoPy, E-Prime"
+    "text": "2023\n\n\n\nTastes Like War\nGrace Cho\n\n\nThe Death of Expertise\nTom Nichols\n\n\nDune\nFrank Herbert\n\n\nA Life on Our Planet\nDavid Attenborough\n\n\nCaste\nIsabel Wilkerson\n\n\nThe River of Consciousness\nOliver Sacks\n\n\nEducated\nTara Westover"
   }
 ]
