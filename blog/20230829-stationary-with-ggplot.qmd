@@ -1,0 +1,14 @@
+---
+title: Creating Office Stationary in R with ggplot2
+author: Michael Pascale
+date: 2023-08-29
+---
+
+Often when reaching a milestone --- say, just after the new year or upon starting a new job --- I spend (more than) a few hours of time excitedly putting together calendars and note-taking systems, in the name of reorganizing my life.
+While this behavior is usually little more than procrastination, cleverly disguised as efficiency and probably serving my instant gratification monkey more than my long term goals, I like to think that it is at least somewhat a process of iterative and creative self-improvement.
+Most times I engage in this _improvement_, I buy a few pens and notebooks, a whiteboard, index cards, or other physical writing formats.
+
+Well, rather than spending hours of my life drawing, this time I decided to type.
+
+The programming and graphics facilities provided by R make it an excellent choice for generation of scientific figures and reports. Certainly it wouldn't be difficult to print custom calendars too?
+

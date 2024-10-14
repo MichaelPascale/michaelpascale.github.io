@@ -61,18 +61,18 @@ format:
         </script>
 ---
 
-Hello! I am a first year doctoral student in the Cognition and Decision Lab at Boston University.
+Hello! I am a doctoral student in the [Cognition and Decision Lab](https://sites.bu.edu/cdlab/) at Boston University.
 
-My research is concerned with decision-making in the context of [information behavior](https://en.wikipedia.org/wiki/Information_behavior), which I approach from the perspective of cognitive neuroscience.
-This primarily includes [information seeking](https://en.wikipedia.org/wiki/Information_seeking) and how it is influenced by curiosity and processes of information valuation.
-I am particularly interested [social epistemology](https://en.wikipedia.org/wiki/Social_epistemology) and the the acquisition of knowledge as a human
+My research is concerned with decision-making in the context of human [information behavior](https://en.wikipedia.org/wiki/Information_behavior), which I approach from the perspective of cognitive neuroscience.
+This primarily includes [information seeking](https://en.wikipedia.org/wiki/Information_seeking) and how it is influenced by curiosity, uncertainty, model-based learning, and valuation processes.
+I am particularly interested [social epistemology](https://en.wikipedia.org/wiki/Social_epistemology) and the acquisition of knowledge as a human
 [social endeavour](https://en.wikipedia.org/wiki/Sociology_of_scientific_knowledge).
 
 I also contribute to open source software in the social sciences.
 
 ## Education
 
-**Doctoral Student - Psychology (Current)**\
+**Doctoral Student - Psychology (Current, Since 2023)**\
 PhD Program in Brain, Behavior, and Cognition\
 [Boston University](https://www.bu.edu/psych/)
 
@@ -99,6 +99,14 @@ Psychology and Mathematics Minors\
 | **[Teledyne DALSA](https://www.teledynedalsa.com/)                                 | June 2019 --- September 2019  |
 +------------------------------------------------------------------------------------+-------------------------------+
 
+## Teaching
+
+Physiological Psychology\
+CAS PS336, Boston University
+
+Introduction to Cognitive Psychology\
+CAS PS231, Boston University
+
 ## Technical Skills
 
 -   **Computer Programming**\
@@ -109,6 +117,9 @@ Psychology and Mathematics Minors\
 
 -   **Data Visualization**\
     ggplot2, Three.js
+
+-   **Development Environments**\
+    Visual Studio Code, RStudio, Jupyter, MATLAB, JetBrains
 
 -   **Web Development**\
     HTML/CSS, Shiny, Django, Vue, PHP, Express

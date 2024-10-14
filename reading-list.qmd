@@ -1,21 +1,66 @@
 ---
 title: Reading List
-date-modified: '2023-07-08'
+date-modified: '2024-05-15'
 ---
 
+
+```{r, output='asis'}
+# Load necessary libraries
+library(xml2)
+library(dplyr)
+
+# Define the URL of the RSS feed
+url <- "https://www.goodreads.com/review/list_rss/122662610?key=nsX43GnJ3fLp_yMJWXqdXk_FgbeJQw3eER6uwLRFluIEgixA&shelf=read"
+
+# Read the RSS feed
+rss_feed <- read_xml(url)
+
+# Extract relevant data
+items <- xml_find_all(rss_feed, "//item")
+
+# Function to extract text from a node
+get_text <- function(node, xpath) {
+  result <- xml_find_first(node, xpath)
+  if (is.null(result)) return(NA)
+  xml_text(result)
+}
+
+# Parse the RSS feed
+books <- tibble(
+  title = sapply(items, get_text, ".//title"),
+  author = sapply(items, get_text, ".//author_name"),
+  publication_year = sapply(items, get_text, ".//book_published"),
+  link = sapply(items, get_text, ".//link"),
+  image = sapply(items, get_text, ".//book_large_image_url")
+)
+
+cat('|||\n|-|-|\n')
+for (i in seq(nrow(books))) {
+  cat(paste('|', paste(paste0('![image](', books[i, 'image'], '){width=1in}'), books[i, 'title'], sep=' | '), '|\n'))
+}
+```
+
+_Retrieved from [GoodReads](https://www.goodreads.com/user/show/122662610-michael)._
+
 Beginning in 2023, the following is a list of books I've read in reverse chronological order. These are not necessarily recommendations; I simply think it might be motivating and worthwhile to track.
+## 2024
+|||
+|-|-|
+| When We Cease to Understand the World | Benjamin Labatut |
+| Less | Andrew Greer |
+| The Information | James Gleick |
+| In a Flight of Starlings | Giorgio Parisi |
 
 ## 2023
 
-Tastes Like War
+|                            |                    |
+| -------------------------- | ------------------ |
+| Tastes Like War            | Grace Cho          |
+| The Velvet Rage | Alan Downs |
+| The Death of Expertise     | Tom Nichols        |
+| Dune                       | Frank Herbert      |
+| A Life on Our Planet       | David Attenborough |
+| Caste                      | Isabel Wilkerson   |
+| The River of Consciousness | Oliver Sacks       |
+| Educated                   | Tara Westover      |
 
-- Dune
-
-A Life on Our Planet
-David Attenborough
-https://en.wikipedia.org/wiki/A_Life_on_Our_Planet
-
-Caste: The Origins of Our Discontents
-I Wilkerson
-
-Educated T.Westover.
