@@ -63,12 +63,9 @@ format:
 
 Hello! I am a doctoral student in the [Cognition and Decision Lab](https://sites.bu.edu/cdlab/) at Boston University.
 
-My research is concerned with decision-making in the context of human [information behavior](https://en.wikipedia.org/wiki/Information_behavior), which I approach from the perspective of cognitive neuroscience.
-This primarily includes [information seeking](https://en.wikipedia.org/wiki/Information_seeking) and how it is influenced by curiosity, uncertainty, model-based learning, and valuation processes.
-I am particularly interested [social epistemology](https://en.wikipedia.org/wiki/Social_epistemology) and the acquisition of knowledge as a human
-[social endeavour](https://en.wikipedia.org/wiki/Sociology_of_scientific_knowledge).
+My research is concerned with decision-making in the context of human [information behavior](https://en.wikipedia.org/wiki/Information_behavior), which I approach from the perspective of computational cognitive neuroscience. This primarily includes [information seeking](https://en.wikipedia.org/wiki/Information_seeking) and exploration, two kinds of behavior which are influenced by curiosity, uncertainty, model-based learning, and valuation processes. On a broader scale, I am particularly interested how these aspects of individual psychology impact [social epistemology](https://en.wikipedia.org/wiki/Social_epistemology) and the acquisition of knowledge as a human [social endeavour](https://en.wikipedia.org/wiki/Sociology_of_scientific_knowledge).
 
-I also contribute to open source software in the social sciences.
+I also am an avid evangelist for the open source movement, contributing to Wikipedia and to software tools in the social sciences.
 
 ## Education
 
@@ -101,11 +98,13 @@ Psychology and Mathematics Minors\
 
 ## Teaching
 
-Physiological Psychology\
-CAS PS336, Boston University
-
-Introduction to Cognitive Psychology\
-CAS PS231, Boston University
++-------------------------------------------+------------------------------+
+| **Physiological Psychology**\             | Fall 2024\                   |
+| Graduate Teaching Fellow                  | CAS PS336, Boston University |
++-------------------------------------------+------------------------------+
+| **Introduction to Cognitive Psychology**\ | Spring 2024\                 |
+| Graduate Teaching Fellow                  | CAS PS231, Boston University |
++-------------------------------------------+------------------------------+
 
 ## Technical Skills
 

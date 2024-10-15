@@ -5,7 +5,8 @@ project:
 website:
   title: Michael P. Pascale
   description: "This is a personal web space, blog, and portfolio site belonging to Michael Pascale, Programmer at the MGH Center for Addiction Medicine. Looking for software development or research services? Email an inquiry!"
-  search: false
+  favicon: assets/chordata-rounded.png
+  search: true
   reader-mode: true
   navbar:
     left:
@@ -13,9 +14,11 @@ website:
         file: index.qmd
       # - reading-list.qmd
       - publications.qmd
-  page-footer: "Copyright &copy; 2018 - 2023, Michael Pascale. All rights reserved."
+  page-footer: "Copyright &copy; 2018 - 2024, Michael Pascale. All rights reserved."
 
 format:
   html:
     resources: assets/*
-    theme: simplex
+    theme: 
+      light: simplex
+      dark: darkly

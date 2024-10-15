@@ -1,10 +1,18 @@
 ---
 title: Reading List
-date-modified: '2024-05-15'
+date-modified: now
+modified-title: Last Generated
+execute: 
+  warning: false
+  message: false
 ---
 
 
-```{r, output='asis'}
+```{r}
+#| message: false
+#| warning: false
+#| code-fold: true
+#| code-summary: "_Scraped from [GoodReads](https://www.goodreads.com/user/show/122662610-michael). Click to expand code._"
 # Load necessary libraries
 library(xml2)
 library(dplyr)
@@ -33,34 +41,31 @@ books <- tibble(
   link = sapply(items, get_text, ".//link"),
   image = sapply(items, get_text, ".//book_large_image_url")
 )
-
-cat('|||\n|-|-|\n')
-for (i in seq(nrow(books))) {
-  cat(paste('|', paste(paste0('![image](', books[i, 'image'], '){width=1in}'), books[i, 'title'], sep=' | '), '|\n'))
-}
 ```
 
-_Retrieved from [GoodReads](https://www.goodreads.com/user/show/122662610-michael)._
 
-Beginning in 2023, the following is a list of books I've read in reverse chronological order. These are not necessarily recommendations; I simply think it might be motivating and worthwhile to track.
-## 2024
-|||
-|-|-|
-| When We Cease to Understand the World | Benjamin Labatut |
-| Less | Andrew Greer |
-| The Information | James Gleick |
-| In a Flight of Starlings | Giorgio Parisi |
+```{r}
+#| echo: false
+library(gt)
 
-## 2023
+books |>
+  gt() |>
+  fmt_image(
+    columns=image,
+    width='1in'
+  ) |>
+  fmt_url(
+    columns=link,
+    label=from_column('title')
+  ) |>
+  cols_hide(title) |>
+  cols_move_to_start(image) |>
+  cols_label(
+    image='Thumbnail',
+    link='Book Title',
+    author='Author',
+    publication_year='Year'
+  )
+```
 
-|                            |                    |
-| -------------------------- | ------------------ |
-| Tastes Like War            | Grace Cho          |
-| The Velvet Rage | Alan Downs |
-| The Death of Expertise     | Tom Nichols        |
-| Dune                       | Frank Herbert      |
-| A Life on Our Planet       | David Attenborough |
-| Caste                      | Isabel Wilkerson   |
-| The River of Consciousness | Oliver Sacks       |
-| Educated                   | Tara Westover      |
 

@@ -1,16 +1,21 @@
 ---
 title: Contributions
-date-modified: '2024-05-15'
+date-modified: now
+modified-title: Last Generated
 ---
 
 ### Published Research
 
-```{r, output='asis', echo=F}
+```{r}
+#| output: asis
+#| code-fold: true
+#| code-summary: "_Retrieved from [Google Scholar](https://scholar.google.com/citations?user=jSGgb-QAAAAJ) with the R Package [`scholar`](https://github.com/jkeirstead/scholar)._"
+# Retrieve  publication entries from Google Scholar and sort chronologically.
 sid <- 'jSGgb-QAAAAJ'
 pubs <- scholar::get_publications(sid)
-
 pubs <- pubs[rev(order(pubs$year)), ]
 
+# Format entries as a markdown unordered list.
 lst <- paste0(
   ' - __[',     pubs$title, '](',  scholar::get_article_scholar_url(sid, pubs$pubid)
 , ')__.',
@@ -19,27 +24,24 @@ lst <- paste0(
   collapse='\n'
 )
 
+# Within each author list, display my initials in bold.
 lst <- stringr::str_replace_all(lst, 'M(ichael)?\\s*(P|Philip)?\\s*Pascale', '__\\0__')
 
 cat(lst)
 ```
 
-_Retrieved from [Google Scholar](https://scholar.google.com/citations?user=jSGgb-QAAAAJ) with the R Package [`scholar`](https://github.com/jkeirstead/scholar)._
-
 ### Public Talks
 
-Wilford, M. M., Rabinovich, M., & Pascale, M. P. (2021, October 22). A demonstration of an interactive simulation of legal procedures. https://youtu.be/RleYRcLIwjQ
+Wilford, M. M., Rabinovich, M., & Pascale, M. P. (2021, October 22). A demonstration of an interactive simulation of legal procedures. [Video](https://youtu.be/RleYRcLIwjQ)
 
 
 ### Poster Format
 
 Gilman, J. M., Schmitt, W. A., Potter, K., Kendzior, B., Pachas, G. N., Hickey, S., Pascale, M., & Evins, A. E. (2021). Identification of ∆9-tetrahydrocannabinol (THC) Impairment Using Functional Brain Imaging of Resting State Connectivity. 60th Annual Meeting of the American College of Neuropsychopharmacology.
 
-Pascale, M., Ozana, N., Potter, K., Kendzior, B., Pachas, G. N., & Evins, A. E. (2022, September 15). Identification of ∆9-tetrahydrocannabinol (THC) impairment using resting-state neuroimaging. Mass General Neuroscience Day.
+Pascale, M., Ozana, N., Potter, K., Kendzior, B., Pachas, G. N., & Evins, A. E. (2022, September 15). Identification of ∆9-tetrahydrocannabinol (THC) impairment using resting-state neuroimaging. Mass General Neuroscience Day. [PDF](https://static.psyc.dev/assets/publications/Pascale et al. - 2022 - Identification of D9-tetrahydrocannabinol (THC) impairment using resting-state neuroimaging.pdf)
 
-Sutherland, K., Smalarz, L., Wilford, M., Wang, Y., & Pascale, M. (2021). Does Knowledge of Coercive Plea Offers Reduce the Tendency to Infer Guilt from a Guilty Plea?
-
-Wilford, M. M., Rabinovich, M., & Pascale, M. P. (2022, August 6). Customizing an interactive simulation of legal procedures for both research and education.
-
+Sutherland, K., Smalarz, L., Wilford, M., Wang, Y., & Pascale, M. (2021). Does Knowledge of Coercive Plea Offers Reduce the Tendency to Infer Guilt from a Guilty Plea? [PDF](https://static.psyc.dev/assets/publications/Sutherland et al. - 2021 - Does Knowledge of Coercive Plea Offers Reduce the.pdf)
 
 Wilford, M. M., Rabinovich, M., & Pascale, M. P. (2022, August 6). Customizing an interactive simulation of legal procedures for both research and education.
+
