@@ -1,17 +1,24 @@
 [
   {
-    "objectID": "blog/20230829-stationary-with-ggplot.html",
-    "href": "blog/20230829-stationary-with-ggplot.html",
-    "title": "Creating Office Stationary in R with ggplot2",
+    "objectID": "reading-list.html",
+    "href": "reading-list.html",
+    "title": "Reading List",
     "section": "",
-    "text": "Often when reaching a milestone — say, just after the new year or upon starting a new job — I spend (more than) a few hours of time excitedly putting together calendars and note-taking systems, in the name of reorganizing my life. While this behavior is usually little more than procrastination, cleverly disguised as efficiency and probably serving my instant gratification monkey more than my long term goals, I like to think that it is at least somewhat a process of iterative and creative self-improvement. Most times I engage in this improvement, I buy a few pens and notebooks, a whiteboard, index cards, or other physical writing formats.\nWell, rather than spending hours of my life drawing, this time I decided to type.\nThe programming and graphics facilities provided by R make it an excellent choice for generation of scientific figures and reports. Certainly it wouldn’t be difficult to print custom calendars too?"
+    "text": "Scraped from GoodReads. Click to expand code.\n# Load necessary libraries\nlibrary(xml2)\nlibrary(dplyr)\n\n# Define the URL of the RSS feed\nurl &lt;- \"https://www.goodreads.com/review/list_rss/122662610?key=nsX43GnJ3fLp_yMJWXqdXk_FgbeJQw3eER6uwLRFluIEgixA&shelf=read\"\n\n# Read the RSS feed\nrss_feed &lt;- read_xml(url)\n\n# Extract relevant data\nitems &lt;- xml_find_all(rss_feed, \"//item\")\n\n# Function to extract text from a node\nget_text &lt;- function(node, xpath) {\n  result &lt;- xml_find_first(node, xpath)\n  if (is.null(result)) return(NA)\n  xml_text(result)\n}\n\n# Parse the RSS feed\nbooks &lt;- tibble(\n  title = sapply(items, get_text, \".//title\"),\n  author = sapply(items, get_text, \".//author_name\"),\n  publication_year = sapply(items, get_text, \".//book_published\"),\n  link = sapply(items, get_text, \".//link\"),\n  image = sapply(items, get_text, \".//book_large_image_url\")\n)\n\n\n\n\n\n\n\n\n\n\n\nThumbnail\nAuthor\nYear\nBook Title\n\n\n\n\n\nOliver Sacks\n2017\nThe River of Consciousness\n\n\n\nThomas M. Nichols\n2017\nThe Death of Expertise: The Campaign Against Established Knowledge and Why It Matters\n\n\n\nGrace M. Cho\n2021\nTastes Like War\n\n\n\nAlan Downs\n2005\nThe Velvet Rage: Overcoming the Pain of Growing Up Gay in a Straight Man's World\n\n\n\nIsabel Wilkerson\n2020\nCaste: The Origins of Our Discontents\n\n\n\nDavid Attenborough\n2020\nA Life on Our Planet: My Witness Statement and a Vision for the Future\n\n\n\nFrank Herbert\n1965\nDune (Dune, #1)\n\n\n\nRichard Dawkins\n1976\nThe Selfish Gene"
+  },
+  {
+    "objectID": "media-log.html",
+    "href": "media-log.html",
+    "title": "Media Log",
+    "section": "",
+    "text": "This page is a list of things I have read, watched, or otherwise engaged with. It’s not necessarily a list of favorites, preferences, or recommendations, but rather like a personal reading log with the following purposes:\n\nTo note for my own personal record, revisitation, and quick reference\nTo share with others who find themselves exploring similar domains of existence\n\nThat I have shared an author or topic here is not an endorsement.\n\nJournals\nhttps://www.cell.com/trends/cognitive-sciences/home https://www.nature.com/nrpsychol/ https://www.sciencedirect.com/journal/cognition https://www.nature.com/nathumbehav/ https://www.cambridge.org/core/journals/behavioral-and-brain-sciences\n\n\nPodcasts\n\n\nBooks\nScraped my Goodreads.\n\n\nArtists\n\n\nPublic Lecture Series (Greater Boston)\nHarvard Neurobiology https://neuro.hms.harvard.edu/events\nhttps://www.martinos.org/events/category/brainmap/ https://www.mbl.edu/education/advanced-research-training-courses/course-offerings/brains-minds-and-machines https://brainmind.org/\nhttps://science.fas.harvard.edu/calendar/upcoming/event-type/science-public-lecture-series https://www.lowellinstitute.org/event/calendar/ https://www.itsoc.org/"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Michael P. Pascale",
     "section": "",
-    "text": "Hello! I am a first year doctoral student in the Cognition and Decision Lab at Boston University.\nMy research is concerned with decision-making in the context of information behavior, which I approach from the perspective of cognitive neuroscience. This primarily includes information seeking and how it is influenced by curiosity and valuation processes. I am particularly interested social epistemology and the acquisition of knowledge as a human social endeavour.\nI also contribute to open source software in the social sciences."
+    "text": "Hello! I am a doctoral student in the Cognition and Decision Lab at Boston University.\nMy research is concerned with decision-making in the context of human information behavior, which I approach from the perspective of computational cognitive neuroscience. This primarily includes information seeking and exploration, two kinds of behavior which are influenced by curiosity, uncertainty, model-based learning, and valuation processes. On a broader scale, I am particularly interested how these aspects of individual psychology impact social epistemology and the acquisition of knowledge as a human social endeavour.\nI also am an avid evangelist for the open source movement, contributing to Wikipedia and to software tools in the social sciences."
   },
   {
     "objectID": "index.html#education",
@@ -28,24 +35,38 @@
     "text": "Previous Experience\n\n\n\nMassachusetts General Hospital\nCenter For Addiction Medicine\nProgrammer\nMarch 2021 — July 2023\n\n\nUniversity of Massachusetts Lowell\nApplied Cognition Lab\nProgrammer\nMay 2020 — May 2021\n\n\nUniversity of New Hampshire\nAffect, Cognition and Computation Lab\nResearch Assistant\nSeptember 2020 — March 2021\n\n\nUniversity of Massachusetts Lowell\nApplied Cognition Lab\nResearch Assistant\nJanuary 2020 — May 2020\n\n\nTeledyne Technologies Inc.\nTeledyne DALSA\nSoftware Engineer Intern\nJune 2019 — September 2019"
   },
   {
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "Michael P. Pascale",
+    "section": "Teaching",
+    "text": "Teaching\n\n\n\n\n\n\n\nPhysiological Psychology\nGraduate Teaching Fellow\nFall 2024\nCAS PS336, Boston University\n\n\nIntroduction to Cognitive Psychology\nGraduate Teaching Fellow\nSpring 2024\nCAS PS231, Boston University"
+  },
+  {
     "objectID": "index.html#technical-skills",
     "href": "index.html#technical-skills",
     "title": "Michael P. Pascale",
     "section": "Technical Skills",
-    "text": "Technical Skills\n\nComputer Programming\nR, JavaScript, C, C++, Python\nData Wrangling\nTidyverse, Excel, Pandas, SQL\nData Visualization\nggplot2, Three.js\nWeb Development\nHTML/CSS, Shiny, Django, Vue, PHP, Express\nElectronic Data Collection\nREDCap, Qualtrics, PsychoPy, E-Prime"
+    "text": "Technical Skills\n\nComputer Programming\nR, JavaScript, C, C++, Python\nData Wrangling\nTidyverse, Excel, Pandas, SQL\nData Visualization\nggplot2, Three.js\nDevelopment Environments\nVisual Studio Code, RStudio, Jupyter, MATLAB, JetBrains\nWeb Development\nHTML/CSS, Shiny, Django, Vue, PHP, Express\nElectronic Data Collection\nREDCap, Qualtrics, PsychoPy, E-Prime"
   },
   {
-    "objectID": "reading-list.html",
-    "href": "reading-list.html",
-    "title": "Reading List",
+    "objectID": "blog/20230829-stationary-with-ggplot.html",
+    "href": "blog/20230829-stationary-with-ggplot.html",
+    "title": "Creating Office Stationary in R with ggplot2",
     "section": "",
-    "text": "Beginning in 2023, the following is a list of books I’ve read in reverse chronological order. These are not necessarily recommendations; I simply think it might be motivating and worthwhile to track."
+    "text": "Often when reaching a milestone — say, just after the new year or upon starting a new job — I spend (more than) a few hours of time excitedly putting together calendars and note-taking systems, in the name of reorganizing my life. While this behavior is usually little more than procrastination, cleverly disguised as efficiency and probably serving my instant gratification monkey more than my long term goals, I like to think that it is at least somewhat a process of iterative and creative self-improvement. Most times I engage in this improvement, I buy a few pens and notebooks, a whiteboard, index cards, or other physical writing formats.\nWell, rather than spending hours of my life drawing, this time I decided to type.\nThe programming and graphics facilities provided by R make it an excellent choice for generation of scientific figures and reports. Certainly it wouldn’t be difficult to print custom calendars too?"
   },
   {
-    "objectID": "reading-list.html#section",
-    "href": "reading-list.html#section",
-    "title": "Reading List",
-    "section": "2023",
-    "text": "2023\n\n\n\nTastes Like War\nGrace Cho\n\n\nThe Death of Expertise\nTom Nichols\n\n\nDune\nFrank Herbert\n\n\nA Life on Our Planet\nDavid Attenborough\n\n\nCaste\nIsabel Wilkerson\n\n\nThe River of Consciousness\nOliver Sacks\n\n\nEducated\nTara Westover"
+    "objectID": "listening-list.html",
+    "href": "listening-list.html",
+    "title": "My Favorite Podcasts",
+    "section": "",
+    "text": "Here’s a list of my favorite podcasts to listen to. These are wholehearted recommendations.\n\n\n\nNullius in Verba with Daniel Lakens and Smriti Mehta “A podcast about science, what it is, and what it could be”\n\n\n\n\n\nBrain Science with Ginger Campbell"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Contributions",
+    "section": "",
+    "text": "Published Research\n\nRetrieved from Google Scholar with the R Package scholar.\n# Retrieve  publication entries from Google Scholar and sort chronologically.\nsid &lt;- 'jSGgb-QAAAAJ'\npubs &lt;- scholar::get_publications(sid)\npubs &lt;- pubs[rev(order(pubs$year)), ]\n\n# Format entries as a markdown unordered list.\nlst &lt;- paste0(\n  ' - __[',     pubs$title, '](',  scholar::get_article_scholar_url(sid, pubs$pubid)\n, ')__.',\n  '  \\n   ', pubs$author, '.',\n  '  \\n   ', pubs$journal, ', ', pubs$year,  '.',\n  collapse='\\n'\n)\n\n# Within each author list, display my initials in bold.\nlst &lt;- stringr::str_replace_all(lst, 'M(ichael)?\\\\s*(P|Philip)?\\\\s*Pascale', '__\\\\0__')\n\ncat(lst)\n\n\nWhat common error patterns can tell us about human problem solving.\nC Ahn, Q Do, L Bakst, M Pascale, J Guo, JT McGuire, ME Hasselmo, ….\nCognitive Computational Neuroscience, 2024.\nA Graph Neural Network Framework to Model Human Reasoning.\nQ Do, C Ahn, L Bakst, M Pascale, JT McGuire, ME Hasselmo, CE Stern.\nCognitive Computational Neuroscience, 2024.\nIntoxication due to Δ9-tetrahydrocannabinol is characterized by disrupted prefrontal cortex activity.\nJMG Keerthana Deepti Karunakaran, Michael Pascale, Nisan Ozana, Kevin Potter ….\nNeuropsychopharmacology, 2024.\nIntention to quit or reduce e-cigarettes, cannabis, and their co-use among a school-based sample of adolescents.\nJ Liu, SJ Knoll, MP Pascale, CA Gray, A Bodolay, KW Potter, J Gilman, ….\nAddictive Behaviors, 2024.\nA pragmatic clinical effectiveness trial of a novel alternative to punishment for school-based substance use infractions: study protocol for the iDECIDE curriculum.\nCA Gray, V Iroegbulem, B Deming, R Butler, D Howell, MP Pascale, ….\nFrontiers in Public Health, 2023.\nDevelopment of cannabis use disorder in medical cannabis users: A 9-month follow-up of a randomized clinical trial testing effects of medical cannabis card ownership.\nME Cooke, KW Potter, J Jashinski, M Pascale, RM Schuster, ….\nFrontiers in psychiatry, 2023.\n\n\n\nPublic Talks\nWilford, M. M., Rabinovich, M., & Pascale, M. P. (2021, October 22). A demonstration of an interactive simulation of legal procedures. Video\n\n\nPoster Format\nGilman, J. M., Schmitt, W. A., Potter, K., Kendzior, B., Pachas, G. N., Hickey, S., Pascale, M., & Evins, A. E. (2021). Identification of ∆9-tetrahydrocannabinol (THC) Impairment Using Functional Brain Imaging of Resting State Connectivity. 60th Annual Meeting of the American College of Neuropsychopharmacology.\nPascale, M., Ozana, N., Potter, K., Kendzior, B., Pachas, G. N., & Evins, A. E. (2022, September 15). Identification of ∆9-tetrahydrocannabinol (THC) impairment using resting-state neuroimaging. Mass General Neuroscience Day. PDF\nSutherland, K., Smalarz, L., Wilford, M., Wang, Y., & Pascale, M. (2021). Does Knowledge of Coercive Plea Offers Reduce the Tendency to Infer Guilt from a Guilty Plea? PDF\nWilford, M. M., Rabinovich, M., & Pascale, M. P. (2022, August 6). Customizing an interactive simulation of legal procedures for both research and education."
   }
 ]

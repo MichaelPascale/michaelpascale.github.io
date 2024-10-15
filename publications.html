@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Michael P. Pascale</title>
+<title>Michael P. Pascale – Contributions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -34,6 +68,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -68,43 +103,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>
-  dialog {
-    border-radius: 10px;
-    border-color: transparent;
-  }
-  dialog::backdrop {
-    opacity: .8;
-    background-color: black;
-  }
-</style>
-</head><body class="nav-fixed fullcontent"><dialog id="email-dialog">
-  <p>You can reach me at either of the following addresses.</p>
-  <p>For academic and research matters:</p>
-  <pre>    mpascale [AT] bu [DOT] edu</pre>
-  <p>For all other personal and professional matters:</p>
-  <pre>    mpascale [AT] psyc [DOT] dev</pre>
-  <form method="dialog">
-    <div class="d-grid mt-4">
-      <button class="btn btn-outline-dark btn-sm float-end">
-        <i class="me-1 bi bi-send-check-fill"></i>
-        <span>Okay, got it!</span>
-      </button>
-    </div>
-  </form>
-</dialog>
-<script>
-  document.addEventListener("DOMContentLoaded", function(event) {
-    const about_link_email = document.getElementById('email-button-text').closest('a.about-link');
-    about_link_email.removeAttribute('href');
-    about_link_email.onclick = function (ev) { document.getElementById('email-dialog').showModal() };
-  });
-</script>
 
 
+</head>
 
-
-
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -122,11 +125,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link active" href="./publications.html" aria-current="page"> 
 <span class="menu-text">Contributions</span></a>
   </li>  
 </ul>
@@ -148,141 +151,92 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Michael P. Pascale</h1>
-<p class="subtitle lead">Cognitive Psychology | Data Science | Research Software</p>
+<h1 class="title">Contributions</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
-  </div>
-</header> <div class="about-links">
-  <a href="https://github.com/MichaelPascale" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://scholar.google.com/citations?user=jSGgb-QAAAAJ&amp;hl=en&amp;oi=ao" class="about-link" rel="" target="">
-    <i class="bi bi-mortarboard-fill"></i>
-     <span class="about-link-text">Google Scholar</span>
-  </a>
-  <a href="https://www.linkedin.com/in/mpascale00" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://twitter.com/mpascale00" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-  <a href="" class="about-link" rel="" target="">
-    <i class="bi bi-envelope-fill"></i>
-     <span class="about-link-text"><span id="email-button-text">Email</span></span>
-  </a>
-  <a href="/assets/mpascale-2021-2027.pub.asc" class="about-link" rel="" target="">
-    <i class="bi bi-key-fill"></i>
-     <span class="about-link-text">OpenPGP</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>Hello! I am a doctoral student in the <a href="https://sites.bu.edu/cdlab/">Cognition and Decision Lab</a> at Boston University.</p>
-<p>My research is concerned with decision-making in the context of human <a href="https://en.wikipedia.org/wiki/Information_behavior">information behavior</a>, which I approach from the perspective of computational cognitive neuroscience. This primarily includes <a href="https://en.wikipedia.org/wiki/Information_seeking">information seeking</a> and exploration, two kinds of behavior which are influenced by curiosity, uncertainty, model-based learning, and valuation processes. On a broader scale, I am particularly interested how these aspects of individual psychology impact <a href="https://en.wikipedia.org/wiki/Social_epistemology">social epistemology</a> and the acquisition of knowledge as a human <a href="https://en.wikipedia.org/wiki/Sociology_of_scientific_knowledge">social endeavour</a>.</p>
-<p>I also am an avid evangelist for the open source movement, contributing to Wikipedia and to software tools in the social sciences.</p>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p><strong>Doctoral Student - Psychology (Current, Since 2023)</strong><br>
-PhD Program in Brain, Behavior, and Cognition<br>
-<a href="https://www.bu.edu/psych/">Boston University</a></p>
-<p><strong>Bachelor of Science - Computer Science (2020)</strong><br>
-Psychology and Mathematics Minors<br>
-<a href="https://www.uml.edu/">University of Massachusetts Lowell</a></p>
-</section>
-<section id="previous-experience" class="level2">
-<h2 data-anchor-id="previous-experience">Previous Experience</h2>
-<table class="table">
-<tbody>
-<tr class="odd">
-<td><strong>Massachusetts General Hospital</strong><br>
-<a href="http://www.mghaddictionmedicine.com/">Center For Addiction Medicine</a></td>
-<td>Programmer<br>
-March 2021 — July 2023</td>
-</tr>
-<tr class="even">
-<td><strong>University of Massachusetts Lowell</strong><br>
-<a href="https://mikowilford.wixsite.com/website-2">Applied Cognition Lab</a></td>
-<td>Programmer<br>
-May 2020 — May 2021</td>
-</tr>
-<tr class="odd">
-<td><strong>University of New Hampshire</strong><br>
-<a href="https://caitlinsmills.wixsite.com/acc-lab">Affect, Cognition and Computation Lab</a></td>
-<td>Research Assistant<br>
-September 2020 — March 2021</td>
-</tr>
-<tr class="even">
-<td><strong>University of Massachusetts Lowell</strong><br>
-<a href="https://mikowilford.wixsite.com/website-2">Applied Cognition Lab</a></td>
-<td>Research Assistant<br>
-January 2020 — May 2020</td>
-</tr>
-<tr class="odd">
-<td><strong>Teledyne Technologies Inc.<br>
-</strong><a href="https://www.teledynedalsa.com/">Teledyne DALSA</a></td>
-<td>Software Engineer Intern<br>
-June 2019 — September 2019</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="teaching" class="level2">
-<h2 data-anchor-id="teaching">Teaching</h2>
-<table class="table">
-<colgroup>
-<col style="width: 58%">
-<col style="width: 41%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Physiological Psychology</strong><br>
-Graduate Teaching Fellow</td>
-<td>Fall 2024<br>
-CAS PS336, Boston University</td>
-</tr>
-<tr class="even">
-<td><strong>Introduction to Cognitive Psychology</strong><br>
-Graduate Teaching Fellow</td>
-<td>Spring 2024<br>
-CAS PS231, Boston University</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="technical-skills" class="level2">
-<h2 data-anchor-id="technical-skills">Technical Skills</h2>
-<ul>
-<li><p><strong>Computer Programming</strong><br>
-R, JavaScript, C, C++, Python</p></li>
-<li><p><strong>Data Wrangling</strong><br>
-Tidyverse, Excel, Pandas, SQL</p></li>
-<li><p><strong>Data Visualization</strong><br>
-ggplot2, Three.js</p></li>
-<li><p><strong>Development Environments</strong><br>
-Visual Studio Code, RStudio, Jupyter, MATLAB, JetBrains</p></li>
-<li><p><strong>Web Development</strong><br>
-HTML/CSS, Shiny, Django, Vue, PHP, Express</p></li>
-<li><p><strong>Electronic Data Collection</strong><br>
-REDCap, Qualtrics, PsychoPy, E-Prime</p></li>
-</ul>
 
-
-</section>
-</main></div>
+    
+  
+    <div>
+    <div class="quarto-title-meta-heading">Last Generated</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">October 14, 2024</p>
     </div>
-    <img src="assets/profile.png" class="about-image
-  rounded " style="width: 8em;">
   </div>
-</div>
- <!-- /main -->
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="published-research" class="level3">
+<h3 class="anchored" data-anchor-id="published-research">Published Research</h3>
+<details class="code-fold">
+<summary><em>Retrieved from <a href="https://scholar.google.com/citations?user=jSGgb-QAAAAJ">Google Scholar</a> with the R Package <a href="https://github.com/jkeirstead/scholar"><code>scholar</code></a>.</em></summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Retrieve  publication entries from Google Scholar and sort chronologically.</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>sid <span class="ot">&lt;-</span> <span class="st">'jSGgb-QAAAAJ'</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>pubs <span class="ot">&lt;-</span> scholar<span class="sc">::</span><span class="fu">get_publications</span>(sid)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>pubs <span class="ot">&lt;-</span> pubs[<span class="fu">rev</span>(<span class="fu">order</span>(pubs<span class="sc">$</span>year)), ]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Format entries as a markdown unordered list.</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>lst <span class="ot">&lt;-</span> <span class="fu">paste0</span>(</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">' - __['</span>,     pubs<span class="sc">$</span>title, <span class="st">']('</span>,  scholar<span class="sc">::</span><span class="fu">get_article_scholar_url</span>(sid, pubs<span class="sc">$</span>pubid)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>, <span class="st">')__.'</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">'  </span><span class="sc">\n</span><span class="st">   '</span>, pubs<span class="sc">$</span>author, <span class="st">'.'</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">'  </span><span class="sc">\n</span><span class="st">   '</span>, pubs<span class="sc">$</span>journal, <span class="st">', '</span>, pubs<span class="sc">$</span>year,  <span class="st">'.'</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">collapse=</span><span class="st">'</span><span class="sc">\n</span><span class="st">'</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Within each author list, display my initials in bold.</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>lst <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_replace_all</span>(lst, <span class="st">'M(ichael)?</span><span class="sc">\\</span><span class="st">s*(P|Philip)?</span><span class="sc">\\</span><span class="st">s*Pascale'</span>, <span class="st">'__</span><span class="sc">\\</span><span class="st">0__'</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(lst)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<ul>
+<li><strong><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=jSGgb-QAAAAJ&amp;citation_for_view=jSGgb-QAAAAJ:zYLM7Y9cAGgC">What common error patterns can tell us about human problem solving</a></strong>.<br>
+C Ahn, Q Do, L Bakst, <strong>M Pascale</strong>, J Guo, JT McGuire, ME Hasselmo, ….<br>
+Cognitive Computational Neuroscience, 2024.</li>
+<li><strong><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=jSGgb-QAAAAJ&amp;citation_for_view=jSGgb-QAAAAJ:Tyk-4Ss8FVUC">A Graph Neural Network Framework to Model Human Reasoning</a></strong>.<br>
+Q Do, C Ahn, L Bakst, <strong>M Pascale</strong>, JT McGuire, ME Hasselmo, CE Stern.<br>
+Cognitive Computational Neuroscience, 2024.</li>
+<li><strong><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=jSGgb-QAAAAJ&amp;citation_for_view=jSGgb-QAAAAJ:2osOgNQ5qMEC">Intoxication due to Δ9-tetrahydrocannabinol is characterized by disrupted prefrontal cortex activity</a></strong>.<br>
+JMG Keerthana Deepti Karunakaran, <strong>Michael Pascale</strong>, Nisan Ozana, Kevin Potter ….<br>
+Neuropsychopharmacology, 2024.</li>
+<li><strong><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=jSGgb-QAAAAJ&amp;citation_for_view=jSGgb-QAAAAJ:IjCSPb-OGe4C">Intention to quit or reduce e-cigarettes, cannabis, and their co-use among a school-based sample of adolescents</a></strong>.<br>
+J Liu, SJ Knoll, <strong>MP Pascale</strong>, CA Gray, A Bodolay, KW Potter, J Gilman, ….<br>
+Addictive Behaviors, 2024.</li>
+<li><strong><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=jSGgb-QAAAAJ&amp;citation_for_view=jSGgb-QAAAAJ:9yKSN-GCB0IC">A pragmatic clinical effectiveness trial of a novel alternative to punishment for school-based substance use infractions: study protocol for the iDECIDE curriculum</a></strong>.<br>
+CA Gray, V Iroegbulem, B Deming, R Butler, D Howell, <strong>MP Pascale</strong>, ….<br>
+Frontiers in Public Health, 2023.</li>
+<li><strong><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=jSGgb-QAAAAJ&amp;citation_for_view=jSGgb-QAAAAJ:u-x6o8ySG0sC">Development of cannabis use disorder in medical cannabis users: A 9-month follow-up of a randomized clinical trial testing effects of medical cannabis card ownership</a></strong>.<br>
+ME Cooke, KW Potter, J Jashinski, <strong>M Pascale</strong>, RM Schuster, ….<br>
+Frontiers in psychiatry, 2023.</li>
+</ul>
+</section>
+<section id="public-talks" class="level3">
+<h3 class="anchored" data-anchor-id="public-talks">Public Talks</h3>
+<p>Wilford, M. M., Rabinovich, M., &amp; Pascale, M. P. (2021, October 22). A demonstration of an interactive simulation of legal procedures. <a href="https://youtu.be/RleYRcLIwjQ">Video</a></p>
+</section>
+<section id="poster-format" class="level3">
+<h3 class="anchored" data-anchor-id="poster-format">Poster Format</h3>
+<p>Gilman, J. M., Schmitt, W. A., Potter, K., Kendzior, B., Pachas, G. N., Hickey, S., Pascale, M., &amp; Evins, A. E. (2021). Identification of ∆9-tetrahydrocannabinol (THC) Impairment Using Functional Brain Imaging of Resting State Connectivity. 60th Annual Meeting of the American College of Neuropsychopharmacology.</p>
+<p>Pascale, M., Ozana, N., Potter, K., Kendzior, B., Pachas, G. N., &amp; Evins, A. E. (2022, September 15). Identification of ∆9-tetrahydrocannabinol (THC) impairment using resting-state neuroimaging. Mass General Neuroscience Day. <a href="https://static.psyc.dev/assets/publications/Pascale%20et%20al.%20-%202022%20-%20Identification%20of%20D9-tetrahydrocannabinol%20(THC)%20impairment%20using%20resting-state%20neuroimaging.pdf">PDF</a></p>
+<p>Sutherland, K., Smalarz, L., Wilford, M., Wang, Y., &amp; Pascale, M. (2021). Does Knowledge of Coercive Plea Offers Reduce the Tendency to Infer Guilt from a Guilty Plea? <a href="https://static.psyc.dev/assets/publications/Sutherland%20et%20al.%20-%202021%20-%20Does%20Knowledge%20of%20Coercive%20Plea%20Offers%20Reduce%20the.pdf">PDF</a></p>
+<p>Wilford, M. M., Rabinovich, M., &amp; Pascale, M. P. (2022, August 6). Customizing an interactive simulation of legal procedures for both research and education.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -447,6 +401,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
