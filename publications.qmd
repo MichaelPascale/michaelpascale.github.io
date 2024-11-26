@@ -1,5 +1,5 @@
 ---
-title: Contributions
+title: Research Contributions
 date-modified: now
 modified-title: Last Generated
 ---
@@ -20,7 +20,7 @@ lst <- paste0(
   ' - __[',     pubs$title, '](',  scholar::get_article_scholar_url(sid, pubs$pubid)
 , ')__.',
   '  \n   ', pubs$author, '.',
-  '  \n   ', pubs$journal, ', ', pubs$year,  '.',
+  '  \n   _', pubs$journal, '_, ', pubs$year,  '.',
   collapse='\n'
 )
 

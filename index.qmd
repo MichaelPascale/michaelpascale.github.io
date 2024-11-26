@@ -6,20 +6,26 @@ about:
   template: solana
   image-width: 8em
   links:
-    - icon: github
-      text: GitHub
-      href: https://github.com/MichaelPascale
+    - icon: envelope-fill
+      text: <span id="email-button-text">Email</span>
     - icon: mortarboard-fill
       text: Google Scholar
       href: https://scholar.google.com/citations?user=jSGgb-QAAAAJ&hl=en&oi=ao
+    - icon: github
+      text: GitHub
+      href: https://github.com/MichaelPascale
+    - icon: person-workspace
+      text: ORCID
+      href: https://orcid.org/0000-0002-4381-224X
+    - icon: twitter
+      text: Twitter/X
+      href: https://twitter.com/mpascale00
+    - icon: feather
+      text: BlueSky
+      href: https://bsky.app/profile/mpascale.psyc.dev
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/mpascale00
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/mpascale00
-    - icon: envelope-fill
-      text: <span id="email-button-text">Email</span>
     - icon: key-fill
       text: OpenPGP
       href: assets/mpascale-2021-2027.pub.asc
