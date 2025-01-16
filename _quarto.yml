@@ -14,7 +14,7 @@ website:
         file: index.qmd
       # - reading-list.qmd
       - publications.qmd
-  page-footer: "Copyright &copy; 2018 - 2024, Michael Pascale. All rights reserved."
+  page-footer: "Copyright &copy; 2018 - 2025, Michael Pascale. All rights reserved."
 
 format:
   html:
