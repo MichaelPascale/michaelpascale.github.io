@@ -1,0 +1,59 @@
+---
+title: "Habits of Mind"
+subtitle: "Planning _Spellkast_: Magic Software for Compiling a Zettlekasten"
+author: Michael Pascale
+date: 2025-01-16
+---
+
+In my quest to manage my personal knowledge, I have simply found it very difficult to commit to one notebook, device, word processor, etc. From the wealth of "second-brain" applications, I've tried (and enjoyed) [Obsidian](https://obsidian.md/), [LogSeq](https://logseq.com/), and [Zettlr](https://zettlr.com/). The capacity that these applications offer to search and --- especailly --- to _link_ peices of knowledge, I have found to be very desirable.
+
+Despite my efforts however, I cannot shake my habit of taking notes on whatever medium is convenient to me. A laptop is a must-have for meetings, but can be cumbersome when I'm out in public. A physical journal suits my quiet moments best. My phone is the only convenient medium on the train.
+
+This document outlines my plan for _Spellkast_, my personal software project for managing a digital [Zettlekasten](https://en.wikipedia.org/wiki/Zettelkasten). The aim of _Spellkast_ is to compile a searchable database of timestamped and indexed notes from the collection of disparate media I write on.
+
+# Specifications
+
+- The software will include plugins or adapters to extract text from each physical or digital medium.
+- The software will create a database of Markdown (plaintext) files, compatible with existing Zettlekasten software (e.g. LogSeq).
+- The software will periodically display a random, unindexed page to encourage me to file it.
+- The software will suggest categories and links between topics.
+- The software will track the source of each note so that I can find the original source.
+
+## Idiosyncratic Constraints
+
+The software will need to handle the following idiosyncracies of my notetaking style.
+
+### Document Headings
+
+I have cultivated the habit of writing an [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) timestamp and my location (e.g. "_At Home_") on every document and note.
+
+### All Caps
+
+I handwrite in all caps.
+
+Yes, it's less _efficient_ than cursive and it's less _readable_ than print, but --- for my impatient hand --- it is the most _legible_. The software could potentially apply either an LLM or a simple sentence case [case mapping conversion](https://stringi.gagolewski.com/rapi/stri_trans_casemap.html) to normalize handwritten inputs.
+
+### Cornell-Tufte Style
+
+I've also cultivated a habit of journaling in what I call _Cornell-Tufte_ format. That is, I take notes in the [Cornell](https://en.wikipedia.org/wiki/Cornell_Notes) style, modified to include a right margin for asides and for graphics in the style of [Edward Tufte](https://edwardtufte.github.io/tufte-css/). The right margin excuses me to write down intrusive thoughts, allowing me to quickly return my focus to the topic at hand.
+
+## Media Support
+
+I tend to keep notes on a variety of media, usually whatever is most convenient to me in the moment. This has worked out such that...
+
+- I keep several physical bullet-journal style [commonplace books](https://en.wikipedia.org/wiki/Commonplace_book).
+- I take meeting notes on a steno pad.
+- I do math on graph paper.
+- I annotate journal articles in [Zotero](https://www.zotero.org/) or on a tablet.
+- I jot down thoughts, quotes, and summaries on index cards.
+
+Plugins will be written to support at least the following media formats.
+
+### Index Cards
+
+Several years ago I put together a Python script which uses OpenCV to segment and rotate index cards scanned in bulk on a flatbed scanner. Text is read off the cards using Tesseract.
+
+### Journal Entries
+
+I'm not yet sure the best way to catalogue my Journal entries. They may be digitized using my phone camera, weekly scans, or in bulk when I complete the journal. As the entries are timestamped, it is not important that they be scanned in order.
+
