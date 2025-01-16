@@ -4,7 +4,7 @@
     "href": "reading-list.html",
     "title": "Reading List",
     "section": "",
-    "text": "Scraped from GoodReads. Click to expand code.\n# Load necessary libraries\nlibrary(xml2)\nlibrary(dplyr)\n\n# Define the URL of the RSS feed\nurl &lt;- \"https://www.goodreads.com/review/list_rss/122662610?key=nsX43GnJ3fLp_yMJWXqdXk_FgbeJQw3eER6uwLRFluIEgixA&shelf=read\"\n\n# Read the RSS feed\nrss_feed &lt;- read_xml(url)\n\n# Extract relevant data\nitems &lt;- xml_find_all(rss_feed, \"//item\")\n\n# Function to extract text from a node\nget_text &lt;- function(node, xpath) {\n  result &lt;- xml_find_first(node, xpath)\n  if (is.null(result)) return(NA)\n  xml_text(result)\n}\n\n# Parse the RSS feed\nbooks &lt;- tibble(\n  title = sapply(items, get_text, \".//title\"),\n  author = sapply(items, get_text, \".//author_name\"),\n  publication_year = sapply(items, get_text, \".//book_published\"),\n  link = sapply(items, get_text, \".//link\"),\n  image = sapply(items, get_text, \".//book_large_image_url\")\n)\n\n\n\n\n\n\n\n\n\n\nThumbnail\nAuthor\nYear\nBook Title\n\n\n\n\n\nOliver Sacks\n2017\nThe River of Consciousness\n\n\n\nThomas M. Nichols\n2017\nThe Death of Expertise: The Campaign Against Established Knowledge and Why It Matters\n\n\n\nGrace M. Cho\n2021\nTastes Like War\n\n\n\nAlan Downs\n2005\nThe Velvet Rage: Overcoming the Pain of Growing Up Gay in a Straight Man's World\n\n\n\nIsabel Wilkerson\n2020\nCaste: The Origins of Our Discontents\n\n\n\nDavid Attenborough\n2020\nA Life on Our Planet: My Witness Statement and a Vision for the Future\n\n\n\nFrank Herbert\n1965\nDune (Dune, #1)\n\n\n\nRichard Dawkins\n1976\nThe Selfish Gene"
+    "text": "Scraped from GoodReads. Click to expand code.\n# Load necessary libraries\nlibrary(xml2)\nlibrary(dplyr)\n\n# Define the URL of the RSS feed\nurl &lt;- \"https://www.goodreads.com/review/list_rss/122662610?key=nsX43GnJ3fLp_yMJWXqdXk_FgbeJQw3eER6uwLRFluIEgixA&shelf=read\"\n\n# Read the RSS feed\nrss_feed &lt;- read_xml(url)\n\n# Extract relevant data\nitems &lt;- xml_find_all(rss_feed, \"//item\")\n\n# Function to extract text from a node\nget_text &lt;- function(node, xpath) {\n  result &lt;- xml_find_first(node, xpath)\n  if (is.null(result)) return(NA)\n  xml_text(result)\n}\n\n# Parse the RSS feed\nbooks &lt;- tibble(\n  title = sapply(items, get_text, \".//title\"),\n  author = sapply(items, get_text, \".//author_name\"),\n  publication_year = sapply(items, get_text, \".//book_published\"),\n  link = sapply(items, get_text, \".//link\"),\n  image = sapply(items, get_text, \".//book_large_image_url\")\n)\n\n\n\n\n\n\n\n\n\n\nThumbnail\nAuthor\nYear\nBook Title\n\n\n\n\n\nAlan Downs\n2005\nThe Velvet Rage: Overcoming the Pain of Growing Up Gay in a Straight Man's World\n\n\n\nDavid Attenborough\n2020\nA Life on Our Planet: My Witness Statement and a Vision for the Future\n\n\n\nOliver Sacks\n2017\nThe River of Consciousness\n\n\n\nThomas M. Nichols\n2017\nThe Death of Expertise: The Campaign Against Established Knowledge and Why It Matters\n\n\n\nGrace M. Cho\n2021\nTastes Like War\n\n\n\nIsabel Wilkerson\n2020\nCaste: The Origins of Our Discontents\n\n\n\nFrank Herbert\n1965\nDune (Dune, #1)\n\n\n\nRichard Dawkins\n1976\nThe Selfish Gene"
   },
   {
     "objectID": "media-log.html",
@@ -39,7 +39,7 @@
     "href": "index.html#teaching",
     "title": "Michael P. Pascale",
     "section": "Teaching",
-    "text": "Teaching\n\n\n\n\n\n\n\nPhysiological Psychology\nGraduate Teaching Fellow\nFall 2024\nCAS PS336, Boston University\n\n\nIntroduction to Cognitive Psychology\nGraduate Teaching Fellow\nSpring 2024\nCAS PS231, Boston University"
+    "text": "Teaching\n\n\n\n\n\n\n\nDrugs and Behavior\nGraduate Teaching Fellow\nSpring 2025\nCAS PS333, Boston University\n\n\nPhysiological Psychology\nGraduate Teaching Fellow\nFall 2024\nCAS PS336, Boston University\n\n\nIntroduction to Cognitive Psychology\nGraduate Teaching Fellow\nSpring 2024\nCAS PS231, Boston University"
   },
   {
     "objectID": "index.html#technical-skills",
@@ -54,6 +54,27 @@
     "title": "Creating Office Stationary in R with ggplot2",
     "section": "",
     "text": "Often when reaching a milestone — say, just after the new year or upon starting a new job — I spend (more than) a few hours of time excitedly putting together calendars and note-taking systems, in the name of reorganizing my life. While this behavior is usually little more than procrastination, cleverly disguised as efficiency and probably serving my instant gratification monkey more than my long term goals, I like to think that it is at least somewhat a process of iterative and creative self-improvement. Most times I engage in this improvement, I buy a few pens and notebooks, a whiteboard, index cards, or other physical writing formats.\nWell, rather than spending hours of my life drawing, this time I decided to type.\nThe programming and graphics facilities provided by R make it an excellent choice for generation of scientific figures and reports. Certainly it wouldn’t be difficult to print custom calendars too?"
+  },
+  {
+    "objectID": "blog/20250116-spellkast.html",
+    "href": "blog/20250116-spellkast.html",
+    "title": "Habits of Mind",
+    "section": "",
+    "text": "In my quest to manage my personal knowledge, I have simply found it very difficult to commit to one notebook, device, word processor, etc. From the wealth of “second-brain” applications, I’ve tried (and enjoyed) Obsidian, LogSeq, and Zettlr. The capacity that these applications offer to search and — especailly — to link peices of knowledge, I have found to be very desirable.\nDespite my efforts however, I cannot shake my habit of taking notes on whatever medium is convenient to me. A laptop is a must-have for meetings, but can be cumbersome when I’m out in public. A physical journal suits my quiet moments best. My phone is the only convenient medium on the train.\nThis document outlines my plan for Spellkast, my personal software project for managing a digital Zettlekasten. The aim of Spellkast is to compile a searchable database of timestamped and indexed notes from the collection of disparate media I write on."
+  },
+  {
+    "objectID": "blog/20250116-spellkast.html#idiosyncratic-constraints",
+    "href": "blog/20250116-spellkast.html#idiosyncratic-constraints",
+    "title": "Habits of Mind",
+    "section": "Idiosyncratic Constraints",
+    "text": "Idiosyncratic Constraints\nThe software will need to handle the following idiosyncracies of my notetaking style.\n\nDocument Headings\nI have cultivated the habit of writing an ISO 8601 format timestamp and my location (e.g. “At Home”) on every document and note.\n\n\nAll Caps\nI handwrite in all caps.\nYes, it’s less efficient than cursive and it’s less readable than print, but — for my impatient hand — it is the most legible. The software could potentially apply either an LLM or a simple sentence case case mapping conversion to normalize handwritten inputs.\n\n\nCornell-Tufte Style\nI’ve also cultivated a habit of journaling in what I call Cornell-Tufte format. That is, I take notes in the Cornell style, modified to include a right margin for asides and for graphics in the style of Edward Tufte. The right margin excuses me to write down intrusive thoughts, allowing me to quickly return my focus to the topic at hand."
+  },
+  {
+    "objectID": "blog/20250116-spellkast.html#media-support",
+    "href": "blog/20250116-spellkast.html#media-support",
+    "title": "Habits of Mind",
+    "section": "Media Support",
+    "text": "Media Support\nI tend to keep notes on a variety of media, usually whatever is most convenient to me in the moment. This has worked out such that…\n\nI keep several physical bullet-journal style commonplace books.\nI take meeting notes on a steno pad.\nI do math on graph paper.\nI annotate journal articles in Zotero or on a tablet.\nI jot down thoughts, quotes, and summaries on index cards.\n\nPlugins will be written to support at least the following media formats.\n\nIndex Cards\nSeveral years ago I put together a Python script which uses OpenCV to segment and rotate index cards scanned in bulk on a flatbed scanner. Text is read off the cards using Tesseract.\n\n\nJournal Entries\nI’m not yet sure the best way to catalogue my Journal entries. They may be digitized using my phone camera, weekly scans, or in bulk when I complete the journal. As the entries are timestamped, it is not important that they be scanned in order."
   },
   {
     "objectID": "listening-list.html",
