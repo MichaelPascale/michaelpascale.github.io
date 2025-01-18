@@ -1,0 +1,60 @@
+---
+title: Custom Retention Policy in Gmail Using AppScript
+author: Michael Pascale
+date: 2025-01-18
+---
+
+There are several newsletters and promotional lists whose emails pollute my Gmail inbox. Although unsubscribing could easily solve this problem, there are certain companies whose promotions I do sometimes like to receive. Whether it's to keep up on local events or the latest email exclusive deals, there is usually not much reason to retain these messages for more than a week or two, and so I tend to do a time-consuming, manual, bulk search-and-delete every few months.
+
+To recoup this time, I put together a simple [Google AppScript](https://script.google.com/home) which allows me to set a retention policy per-address on these promotional mailings. New rules are easily added as a new row in a Google Sheet, which I keep bookmarked.
+
+![The retention policy is defined in a Google Sheet. Add a row with the address to check and number of days to retain. Apply data validation criteria in Google Sheets to check for valid addresses and to include the dropdown for number of days.](https://static.psyc.dev/assets/blog/20250118-keep-my-inbox-clean/2025-01-18-google-sheet.png)
+
+The AppScript reads from the policy sheet and filters through my Gmail Inbox, accordingly moving conversations to the trash.
+
+```javascript
+const DAY_MS = (24 * 60 * 60 * 1000)
+const SHEET_ID = "ymjPzDSUCMsbNLvCSVzx9y6kfumNWY5o" // <-- Replace with your spreadsheet ID (in the Google Sheet URL).
+
+function retrievePolicy(){
+  const ss  = SpreadsheetApp.openById(SHEET_ID)
+  return ss.getSheetByName('RetentionPolicy').getSheetValues(2,1,1000,2).filter(row => row[0] != "")
+}
+
+function applyRetentionPolicy () {
+  const pol = retrievePolicy()
+  const today = new Date()
+
+  for (rule of pol) {
+    const cnvs = GmailApp.search(`from:${rule[0]}`)
+    console.log(`Apply rule {from: ${rule[0]}, keep: ${rule[1]}} to ${cnvs.length} conversations.`)
+    
+    if (rule[1] == 'indefinitely')
+      continue
+    
+    if (rule[1].endsWith('days')) {
+      const ndays = Number(rule[1].replace(/\D/g, ''))
+      const ndays_ago = new Date()
+      ndays_ago.setDate(ndays_ago.getDate() - ndays)
+
+      for (cnv of cnvs) {
+        if (cnv.getLastMessageDate() < ndays_ago) {
+          const age = Math.ceil((today - cnv.getLastMessageDate()) / DAY_MS)
+          console.log(`  Deleting conversation "${cnv.getFirstMessageSubject()}" (${age} days old)`)
+          cnv.moveToTrash()
+        }
+      }
+    }
+
+  }
+}
+```
+
+Click run, and there go all those old promotions...
+
+![The AppScript excecution log records which messages were trashed. Goodbye junk mail!](https://static.psyc.dev/assets/blog/20250118-keep-my-inbox-clean/2025-01-18-execution-log.png)
+
+Finally, a custom trigger runs the script every Monday morning, so I can start my week with a fresh inbox.
+
+![AppScript allows you to set "app triggers" with which you can set your script to run automatically at regular intervals.](https://static.psyc.dev/assets/blog/20250118-keep-my-inbox-clean/2025-01-18-app-trigger.png){width="70%"}
+
