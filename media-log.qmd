@@ -1,5 +1,5 @@
 ---
-title: Media Log
+title: Media Favorites
 date-modified: '2024-06-24'
 ---
 
@@ -10,32 +10,15 @@ This page is a list of things I have read, watched, or otherwise engaged with. I
 
 That I have shared an author or topic here is not an endorsement.
 
-# Journals
+## Podcasts
 
-https://www.cell.com/trends/cognitive-sciences/home
-https://www.nature.com/nrpsychol/
-https://www.sciencedirect.com/journal/cognition
-https://www.nature.com/nathumbehav/
-https://www.cambridge.org/core/journals/behavioral-and-brain-sciences
+Here's a list of my favorite podcasts to listen to. These are wholehearted recommendations.
 
-# Podcasts
-
-# Books
-
-_Scraped my Goodreads_.
-
-# Artists
-
-
-# Public Lecture Series (Greater Boston)
-
-Harvard Neurobiology https://neuro.hms.harvard.edu/events
-
-https://www.martinos.org/events/category/brainmap/
-https://www.mbl.edu/education/advanced-research-training-courses/course-offerings/brains-minds-and-machines
-https://brainmind.org/
-
-https://science.fas.harvard.edu/calendar/upcoming/event-type/science-public-lecture-series
-https://www.lowellinstitute.org/event/calendar/
-https://www.itsoc.org/
-
+| |
+|-|
+|[Nullius in Verba](https://nulliusinverba.podbean.com/) with [Daniel Lakens](https://sites.google.com/site/lakens2/Home) and [Smriti Mehta](https://www.linkedin.com/in/smriti-mehta-6a5aab51)<br> "A podcast about science, what it is, and what it could be"|
+|<iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/0tw0yVZxuf2X4iN6kFay5A?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>|
+|[Brain Inspired](https://braininspired.co/podcast/) with [Paul Middlebrooks](https://www.thetransmitter.org/contributor/paul-middlebrooks/)|
+|<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3AMzjyLLbz4u9oBupyCBMw?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>|
+|[Brain Science](https://brainsciencepodcast.com/) with [Ginger Campbell](https://www.virginiacampbellmd.com)|
+|<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2nMGVNzw4K2LMrBNe72bBi?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>|

@@ -69,19 +69,26 @@ format:
 
 Hello! I am a doctoral student in the [Cognition and Decision Lab](https://sites.bu.edu/cdlab/) at Boston University.
 
-My research is concerned with decision-making in the context of human [information behavior](https://en.wikipedia.org/wiki/Information_behavior), which I approach from the perspective of computational cognitive neuroscience. This primarily includes [information seeking](https://en.wikipedia.org/wiki/Information_seeking) and exploration, two kinds of behavior which are influenced by curiosity, uncertainty, model-based learning, and valuation processes. On a broader scale, I am particularly interested how these aspects of individual psychology impact [social epistemology](https://en.wikipedia.org/wiki/Social_epistemology) and the acquisition of knowledge as a human [social endeavour](https://en.wikipedia.org/wiki/Sociology_of_scientific_knowledge).
+My research is concerned with decision-making in the context of &shy;human [information behavior](https://en.wikipedia.org/wiki/Information_behavior), which I approach from the perspective of computational cognitive neuroscience. This primarily includes &shy;[information seeking](https://en.wikipedia.org/wiki/Information_seeking) and exploration, two kinds of behavior which are influenced by &shy;curiosity, uncertainty, model-based learning, and valuation processes. &shy;On a broader scale, I am particularly interested how these aspects of individual psychology impact [social epistemology](https://en.wikipedia.org/wiki/Social_epistemology) and the acquisition of knowledge as a human [social endeavor](https://en.wikipedia.org/wiki/Sociology_of_scientific_knowledge).
 
 I also am an avid evangelist for the open source movement, contributing to Wikipedia and to software tools in the social sciences.
 
 ## Education
 
-**Doctoral Student - Psychology (Current, Since 2023)**\
-PhD Program in Brain, Behavior, and Cognition\
-[Boston University](https://www.bu.edu/psych/)
+:::{.list-table header-rows=0 aligns=l,c}
+   * - **Doctoral Student - Psychology (Current, Since 2023)**\
+       PhD Program in Brain, Behavior, and Cognition
+     - []{rowspan=2} <a style="display: inline-block; padding-top: 2em;" href="https://www.bu.edu/psych/">Boston University</a>\
+       Graduate School of Arts and Sciences
 
-**Bachelor of Science - Computer Science (2020)**\
-Psychology and Mathematics Minors\
-[University of Massachusetts Lowell](https://www.uml.edu/)
+   * - **Master of Arts - Psychology (2025)**\
+       Conferred en route to PhD
+
+   * - **Bachelor of Science - Computer Science (2020)**\
+       Psychology and Mathematics Minors
+     - <a href="https://www.uml.edu/Sciences/computer-science/">University of Massachusetts Lowell</a>\
+       Kennedy College of Sciences
+:::
 
 ## Previous Experience
 

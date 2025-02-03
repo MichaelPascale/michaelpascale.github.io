@@ -7,14 +7,28 @@ website:
   description: "This is a personal web space, blog, and portfolio site belonging to Michael Pascale, Programmer at the MGH Center for Addiction Medicine. Looking for software development or research services? Email an inquiry!"
   favicon: assets/chordata-rounded.png
   search: true
-  reader-mode: true
   navbar:
     left:
       - text: "About Me"
         file: index.qmd
-      # - reading-list.qmd
-      - publications.qmd
-  page-footer: "Copyright &copy; 2018 - 2025, Michael Pascale. All rights reserved."
+      - text: "Publications"
+        file: publications.qmd
+      # - text: "Teaching"
+      #   file: teaching.qmd
+      - text: "Personal"
+        menu: 
+          - reading-list.qmd
+          - media-log.qmd
+          - text: Blog
+            file: blog/index.qmd
+  page-footer:
+    center: |
+      [Copyright &copy; 2018 - 2025, Michael Pascale. All rights reserved.  
+      [Made with &hearts; using [Quarto](https://quarto.org/).  
+      Type: _Crimson Pro_ by Jacques Le Bailly and _Ysabeau_ by Christian Thalmann]{.small}]{style="display: inline-block; text-align: center;"}
+
+filters:
+  - list-table
 
 format:
   html:
@@ -22,3 +36,7 @@ format:
     theme: 
       light: simplex
       dark: darkly
+    css: stylemod.css
+    mainfont: Crimson Pro Light
+    fontsize: 18pt
+    page-layout: full
