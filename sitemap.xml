@@ -1,43 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.psyc.dev/teaching.html</loc>
-    <lastmod>2025-02-03T20:46:07.149Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.psyc.dev/reading-list.html</loc>
     <lastmod>2025-02-03T20:44:06.001Z</lastmod>
   </url>
   <url>
     <loc>https://www.psyc.dev/media-log.html</loc>
-    <lastmod>2025-02-03T20:51:53.976Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psyc.dev/blog/index.html</loc>
-    <lastmod>2025-01-24T20:27:45.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psyc.dev/blog/20250118-keep-my-inbox-clean.html</loc>
-    <lastmod>2025-01-18T21:33:45.071Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psyc.dev/blog/20230829-stationary-with-ggplot.html</loc>
-    <lastmod>2024-10-15T03:27:49.621Z</lastmod>
+    <lastmod>2025-07-14T18:17:01.203Z</lastmod>
   </url>
   <url>
     <loc>https://www.psyc.dev/blog/20250116-spellkast.html</loc>
     <lastmod>2025-01-16T22:38:06.144Z</lastmod>
   </url>
   <url>
+    <loc>https://www.psyc.dev/blog/20230829-stationary-with-ggplot.html</loc>
+    <lastmod>2025-02-23T20:41:33.177Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.psyc.dev/blog/20250118-keep-my-inbox-clean.html</loc>
+    <lastmod>2025-01-18T21:33:45.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.psyc.dev/blog/index.html</loc>
+    <lastmod>2025-01-24T20:27:45.271Z</lastmod>
+  </url>
+  <url>
     <loc>https://www.psyc.dev/index.html</loc>
-    <lastmod>2025-02-03T20:57:53.934Z</lastmod>
+    <lastmod>2025-07-14T18:05:52.032Z</lastmod>
   </url>
   <url>
     <loc>https://www.psyc.dev/publications.html</loc>
     <lastmod>2024-11-08T15:27:47.093Z</lastmod>
   </url>
   <url>
-    <loc>https://www.psyc.dev/scrap.html</loc>
-    <lastmod>2025-02-03T20:51:51.374Z</lastmod>
+    <loc>https://www.psyc.dev/teaching.html</loc>
+    <lastmod>2025-02-03T20:46:07.149Z</lastmod>
   </url>
 </urlset>
