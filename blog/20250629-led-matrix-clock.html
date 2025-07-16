@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Michael Pascale">
+<meta name="dcterms.date" content="2025-06-29">
 
-<title>Blog – Michael P. Pascale</title>
+<title>A Simple LED Matrix Clock and Bulletin Board – Michael P. Pascale</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../assets/chordata-rounded.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -74,72 +74,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../stylemod.css">
-<meta property="og:title" content="Blog – Michael P. Pascale">
+<meta property="og:title" content="A Simple LED Matrix Clock and Bulletin Board – Michael P. Pascale">
+<meta property="og:description" content="This is a personal web space, blog, and portfolio site belonging to Michael Pascale, Programmer at the MGH Center for Addiction Medicine. Looking for software development or research services? Email an inquiry!">
 <meta property="og:image" content="https://static.psyc.dev/assets/og.png">
 <meta property="og:site_name" content="Michael P. Pascale">
 <meta property="og:image:alt" content="Michael Pascale is a doctoral student in the Brain Behavior Cognition Program at Boston University. His research seeks to explain why human beings exhibit curiosity.">
-<meta name="twitter:title" content="Blog – Michael P. Pascale">
+<meta name="twitter:title" content="A Simple LED Matrix Clock and Bulletin Board – Michael P. Pascale">
+<meta name="twitter:description" content="This is a personal web space, blog, and portfolio site belonging to Michael Pascale, Programmer at the MGH Center for Addiction Medicine. Looking for software development or research services? Email an inquiry!">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -368,14 +312,26 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">A Simple LED Matrix Clock and Bulletin Board</h1>
 </div>
 
 
 
 <div class="quarto-title-meta column-page">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Michael Pascale </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 29, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -385,127 +341,109 @@ window.Quarto = {
 </header>
 
 
+<p>My roommate and I saw a bulletin board in a coffee shop built on an LED matrix. Maybe it would be nice to design our own!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://static.psyc.dev/assets/blog/20250629-led-matrix-clock/PXL_20250624_214411759.jpg" class="img-fluid figure-img"></p>
+<figcaption>The final product. Wow it was hot out in June!</figcaption>
+</figure>
+</div>
+<p>Our plan was to use a <a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi 4B</a> as the controller. We debated between an eInk and and LED matrix.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Critical Length (mm)</th>
+<th>Critical Width (mm)</th>
+<th>Description</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Display</td>
+<td>192.00</td>
+<td>192.00</td>
+<td>Square, 64x64, RGB LED Matrix</td>
+<td><a href="https://www.amazon.com/Matrix-Raspberry-192x192-Adjustable-Brightness/dp/B0BYJHMFSQ">Amazon</a></td>
+</tr>
+<tr class="even">
+<td>Display</td>
+<td>114.90</td>
+<td>85.80</td>
+<td>600x448, eInk, Color, 5.65”, 50mW</td>
+<td><a href="https://www.amazon.com/5-65inch-Display-Module-Compatible-Raspberry/dp/B08J7GGRYF">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p>The LED matrix was closer to the vibe we were going for, and it turned out to be much cheaper. Next we needed to find an appropriate frame.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Critical Length (mm)</th>
+<th>Critical Width (mm)</th>
+<th>Description</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Frame</td>
+<td>152.40</td>
+<td>152.40</td>
+<td>Square, rounded edges, cherry</td>
+<td><a href="https://www.amazon.com/Recuerdos-Picture-Natural-Tabletop-Display/dp/B0D2GSR9ZL">Amazon</a></td>
+</tr>
+<tr class="even">
+<td>Frame</td>
+<td>152.00</td>
+<td>203.00</td>
+<td>Multiple Sizes and orientations, beechwood</td>
+<td><a href="https://www.etsy.com/listing/1491592669/home-solid-beechwood-photo-frame-size">Etsy</a></td>
+</tr>
+<tr class="odd">
+<td>Frame</td>
+<td>203.00</td>
+<td>253.00</td>
+<td>Multiple Sizes and orientations, walnut</td>
+<td><a href="https://www.etsy.com/listing/1340155281/hsh-solid-wood-picture-frame-rustic">Etsy</a></td>
+</tr>
+<tr class="even">
+<td>Frame</td>
+<td>254.00</td>
+<td>127.00</td>
+<td>5”x10” Floating Canvas Frame, Deep</td>
+<td><a href="https://www.etsy.com/listing/1609523410/natural-hardwood-of-your-choice-in-deep">Etsy</a></td>
+</tr>
+<tr class="odd">
+<td>Frame</td>
+<td>254.00</td>
+<td>127.00</td>
+<td>5”x10” Colorful wood</td>
+<td><a href="https://www.etsy.com/listing/264569810/vintage-color-of-your-choice-in-foxy">Etsy</a></td>
+</tr>
+</tbody>
+</table>
+<p>So that we could collaboratively a draw pixel art icon set, I set up conditional formatting in a Google sheet such that the number in each cell determined the color. Then I wrote a Python script to convert the numeric matrix to a set of PNG images.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://static.psyc.dev/assets/blog/20250629-led-matrix-clock/Screenshot_20250629_Graphics.png" class="img-fluid figure-img"></p>
+<figcaption>Pixel art in a Google Sheet using conditional formatting.</figcaption>
+</figure>
+</div>
+<p>Using the <a href="https://github.com/hzeller/rpi-rgb-led-matrix">LED Matrix driver written by Henner Zeller</a>, I wrote some code to pull weather information from OpenWeather at regular intervals and draw the date and time to the screen (<a href="https://github.com/MichaelPascale/rpi-rgb-led-matrix/tree/master/widgets">GitHub</a>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://static.psyc.dev/assets/blog/20250629-led-matrix-clock/PXL_20250102_012029837.jpg" class="img-fluid figure-img"></p>
+<figcaption>Might want to make those icons a little smaller…</figcaption>
+</figure>
+</div>
+<p>Future additions may include rotating widgets in the right panel, specifically with data on train arrivals from the <a href="https://www.mbta.com/developers/v3-api">MBTA’s API</a>.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1751169600000" data-listing-file-modified-sort="1752679574155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="668">
-<div class="thumbnail"><a href="../blog/20250629-led-matrix-clock.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/20250629-led-matrix-clock.html" class="no-external">A Simple LED Matrix Clock and Bulletin Board</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/20250629-led-matrix-clock.html" class="no-external"></a>
-</div>
-<div class="delink listing-description"><a href="../blog/20250629-led-matrix-clock.html" class="no-external">
-My roommate and I saw a bulletin board in a coffee shop built on an LED matrix. Maybe it would be nice to design our own!
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/20250629-led-matrix-clock.html" class="no-external">
-<div class="listing-date">
-Jun 29, 2025
-</div>
-<div class="listing-author">
-Michael Pascale
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1737176400000" data-listing-file-modified-sort="1737236025071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
-<div class="thumbnail"><a href="../blog/20250118-keep-my-inbox-clean.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/20250118-keep-my-inbox-clean.html" class="no-external">Custom Retention Policy in Gmail Using AppScript</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/20250118-keep-my-inbox-clean.html" class="no-external"></a>
-</div>
-<div class="delink listing-description"><a href="../blog/20250118-keep-my-inbox-clean.html" class="no-external">
-There are several newsletters and promotional lists whose emails pollute my Gmail inbox. Although unsubscribing could easily solve this problem, there are certain companies…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/20250118-keep-my-inbox-clean.html" class="no-external">
-<div class="listing-date">
-Jan 18, 2025
-</div>
-<div class="listing-author">
-Michael Pascale
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1737003600000" data-listing-file-modified-sort="1737067086144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="536">
-<div class="thumbnail"><a href="../blog/20250116-spellkast.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/20250116-spellkast.html" class="no-external">Habits of Mind</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/20250116-spellkast.html" class="no-external">Planning <em>Spellkast</em>: Magic Software for Compiling a Zettlekasten</a>
-</div>
-<div class="delink listing-description"><a href="../blog/20250116-spellkast.html" class="no-external">
-In my quest to manage my personal knowledge, I have simply found it very difficult to commit to one notebook, device, word processor, etc. From the wealth of “second-brain”…<em></em>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/20250116-spellkast.html" class="no-external">
-<div class="listing-date">
-Jan 16, 2025
-</div>
-<div class="listing-author">
-Michael Pascale
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1693281600000" data-listing-file-modified-sort="1740343293177" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="419">
-<div class="thumbnail"><a href="../blog/20230829-stationary-with-ggplot.html" class="no-external">
-
-<p class="card-img-top"><img src="20230829-stationary-with-ggplot_files/figure-html/unnamed-chunk-1-1.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/20230829-stationary-with-ggplot.html" class="no-external">Creating Office Stationary in R with ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/20230829-stationary-with-ggplot.html" class="no-external"></a>
-</div>
-<div class="delink listing-description"><a href="../blog/20230829-stationary-with-ggplot.html" class="no-external">
-Often when reaching a milestone — say, just after the new year or upon starting a new job — I spend (more than) a few hours of time excitedly putting together calendars and…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/20230829-stationary-with-ggplot.html" class="no-external">
-<div class="listing-date">
-Aug 29, 2023
-</div>
-<div class="listing-author">
-Michael Pascale
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
