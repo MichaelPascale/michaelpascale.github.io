@@ -1,34 +1,27 @@
 ---
 title: "Michael P. Pascale"
-subtitle: Cognitive Psychology | Data Science | Research Software
-image: assets/profile.png
+subtitle: Cognitive Psychology | Curiosity & Exploration | Data Management
 about:
+  image: assets/profile.png
   template: solana
   image-width: 8em
   links:
     - icon: envelope-fill
       text: <span id="email-button-text">Email</span>
-    - icon: mortarboard-fill
-      text: Google Scholar
-      href: https://scholar.google.com/citations?user=jSGgb-QAAAAJ&hl=en&oi=ao
     - icon: github
       text: GitHub
       href: https://github.com/MichaelPascale
+    - icon: bluesky
+      text: BlueSky
+      href: https://bsky.app/profile/mpascale.psyc.dev
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=jSGgb-QAAAAJ&hl=en&oi=ao
     - icon: person-workspace
       text: ORCID
       href: https://orcid.org/0000-0002-4381-224X
-    - icon: twitter
-      text: Twitter/X
-      href: https://twitter.com/mpascale00
-    - icon: feather
-      text: BlueSky
-      href: https://bsky.app/profile/mpascale.psyc.dev
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/mpascale00
     - icon: key-fill
-      text: OpenPGP
-      href: assets/mpascale-2021-2027.pub.asc
+      text: <span id="pgp-button-text">OpenPGP</span>
 format:
   html:
     include-in-header:
@@ -58,11 +51,54 @@ format:
             </div>
           </form>
         </dialog>
+        <dialog id="pgp-dialog">  
+          <p>My public key fingerprint is:
+          <pre>5335 C45A 1E46 69F9 DA6F  B46B E3A2 9AC4 FC3B 1D4F</pre>
+          
+          </p>
+          <p>You may download it directly from <a href="https://static.psyc.dev/pubkey">static.psyc.dev/pubkey</a>.
+          <pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+        mDMEYcHnOxYJKwYBBAHaRw8BAQdA04MeC4GOl3FdHU9EHHsbvcKfowVoq2lD8B9B
+        9i9UpjS0I01pY2hhZWwgUGFzY2FsZSA8bXBhc2NhbGVAcHN5Yy5kZXY+iJYEExYI
+        AD4CGwMFCwkIBwIGFQoJCAsCBBYCAwECHgECF4AWIQRTNcRaHkZp+dpvtGvjoprE
+        /DsdTwUCaEHsQgUJDxmO1QAKCRDjoprE/DsdTzzzAP4kiXOv1F1f5fWJfYILsCVW
+        x5/rYu8IVlKJrHZCNN4cAQEAqjspBPF1wBXJkJ8lq4st4UqjnO1+txIxpGv0Rhkr
+        AAK0IU1pY2hhZWwgUGFzY2FsZSA8bXBhc2NhbGVAYnUuZWR1PoiZBBMWCgBBAhsD
+        BQsJCAcCAiICBhUKCQgLAgQWAgMBAh4HAheAFiEEUzXEWh5Gafnab7Rr46KaxPw7
+        HU8FAmhB7D4FCQ8ZjtUACgkQ46KaxPw7HU/1IgEAiagrw6Xhrap8PVlZxpvLB+Dx
+        W9z2RkkolLxJ+cbCm20A/RuAXUCquKXhouDpuMUvuqMMYSqskM+uOaAMDI7gQDQM
+        uDMEYcHnOxYJKwYBBAHaRw8BAQdAG9cLy+SoOUvOk6F4DR7A6t+IYnnjs3M5eCmO
+        KEm4qLSIfgQYFggAJgIbIBYhBFM1xFoeRmn52m+0a+OimsT8Ox1PBQJoQezbBQkP
+        GY7VAAoJEOOimsT8Ox1Pc50A+QGqiQokGDrLNuFr3AOcO6W4m6kJg/YqIpOwi37A
+        8zoHAQCjh989DxUx4ltASwUyrst5uLwZFeqFv131HUgC28oqDrg4BGHB5zsSCisG
+        AQQBl1UBBQEBB0AhhtZgq55fhb6ilFMyMzXTenD+j6WuoFO+O5j5nphlWQMBCAeI
+        fgQYFggAJgIbDBYhBFM1xFoeRmn52m+0a+OimsT8Ox1PBQJoQezhBQkPGY7VAAoJ
+        EOOimsT8Ox1P6AMBAN3RZ9p3CzqiMcJ9ukrl2dvhmhGyjl0lbufIXvSzCwfcAQCz
+        Zxay3RDslq9DqK4yS7oog+L1kuMZaMJZkqb95HjaAg==
+        =7sdZ
+        -----END PGP PUBLIC KEY BLOCK-----</pre>
+          <p>I have extended this key's validity through <b>December, 2029</b>.</p>
+          <form method="dialog">
+            <div class="d-grid mt-4">
+              <button class="btn btn-outline-dark btn-sm float-end">
+                <i class="me-1 bi bi-lock-fill"></i>
+                <span>Okay, got it!</span>
+              </button>
+            </div>
+          </form>
+        </dialog>
         <script>
           document.addEventListener("DOMContentLoaded", function(event) {
             const about_link_email = document.getElementById('email-button-text').closest('a.about-link');
             about_link_email.removeAttribute('href');
             about_link_email.onclick = function (ev) { document.getElementById('email-dialog').showModal() };
+          });
+        </script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function(event) {
+            const about_link_pgp = document.getElementById('pgp-button-text').closest('a.about-link');
+            about_link_pgp.removeAttribute('href');
+            about_link_pgp.onclick = function (ev) { document.getElementById('pgp-dialog').showModal() };
           });
         </script>
 ---
