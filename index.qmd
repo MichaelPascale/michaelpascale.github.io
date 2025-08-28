@@ -1,6 +1,6 @@
 ---
 title: "Michael P. Pascale"
-subtitle: Cognitive Psychology | Curiosity & Exploration | Data Management
+subtitle: Research in Computational Cognitive Sciences, Curiosity, Exploration
 about:
   image: assets/profile.png
   template: solana
