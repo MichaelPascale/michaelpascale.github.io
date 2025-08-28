@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Crimson Pro Light';
+    src: url("https://static.psyc.dev/assets/fonts/CrimsonProLight.woff2");
+}
+
+@font-face {
+    font-family: 'Ysabeau Regular';
+    src: url("https://static.psyc.dev/assets/fonts/YsabeauRegular.woff2");
+}
+
+@font-face {
+    font-family: 'Ysabeau Bold';
+    src: url("https://static.psyc.dev/assets/fonts/YsabeauBold.woff2");
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Ysabeau Bold;
+}
+
+p {
+    text-align: justify;
+    hyphens: manual;
+}
+
+pre {
+    font-size: 10pt;
+}
+
+.about-link {
+    font-family: Ysabeau Regular;
+    font-size: 7pt;
+}

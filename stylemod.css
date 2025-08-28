@@ -25,7 +25,11 @@ p {
     hyphens: manual;
 }
 
-pre {
+code {
+    font-size: 12pt;
+}
+
+pre code {
     font-size: 10pt;
 }
 

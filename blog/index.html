@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.21">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Michael P. Pascale</title>
+<title>Michael’s WebLog – Michael P. Pascale</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,18 +35,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e3031b2b07293ce5c0b259fcee51fff1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-67839544912bc898267f15026188952a.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e3031b2b07293ce5c0b259fcee51fff1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e0ec7421aaea25ef28d49db145c42d2e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-99896e9fee7af913ebbdda30123fe5f0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-e0ec7421aaea25ef28d49db145c42d2e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-37ab42c4e36e587067a22b397cfe9655.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e9fd52b0a5c4d328fec01f3a3aa2fe72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-37ab42c4e36e587067a22b397cfe9655.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -118,7 +119,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -135,11 +136,13 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../stylemod.css">
-<meta property="og:title" content="Blog – Michael P. Pascale">
+<meta property="og:title" content="Michael’s WebLog – Michael P. Pascale">
+<meta property="og:description" content="This is a personal web space, blog, and portfolio site belonging to Michael Pascale, Programmer at the MGH Center for Addiction Medicine. Looking for software development or research services? Email an inquiry!">
 <meta property="og:image" content="https://static.psyc.dev/assets/og.png">
 <meta property="og:site_name" content="Michael P. Pascale">
 <meta property="og:image:alt" content="Michael Pascale is a doctoral student in the Brain Behavior Cognition Program at Boston University. His research seeks to explain why human beings exhibit curiosity.">
-<meta name="twitter:title" content="Blog – Michael P. Pascale">
+<meta name="twitter:title" content="Michael’s WebLog – Michael P. Pascale">
+<meta name="twitter:description" content="This is a personal web space, blog, and portfolio site belonging to Michael Pascale, Programmer at the MGH Center for Addiction Medicine. Looking for software development or research services? Email an inquiry!">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -312,6 +315,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Michael P. Pascale</span>
     </a>
@@ -328,7 +333,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../publications.html"> 
-<span class="menu-text">Publications</span></a>
+<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-personal" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -368,7 +373,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Michael’s WebLog</h1>
 </div>
 
 
@@ -385,6 +390,8 @@ window.Quarto = {
 </header>
 
 
+<p>A blog (or the original <a href="https://en.wikipedia.org/wiki/Blog#Origins"><em>weblog</em></a>, as I prefer) is something I see as a place for one to be themselves, through which to cultivate and refine themselves over time. As such, my prose here is often raw and unedited; you may find these writings to be more for me than for you. Nevertheless, I do still hope some of my activity may be useful or interesting to others.</p>
+<p>My blog posts are also living documents. That is, the published date reflects the date first published, though posts may have been modified since. <a href="https://en.wikipedia.org/wiki/Link_rot">Link rot</a> irks me, so hopefully I’m keeping external references up to date — I very much intend for URLs to work long into the future.</p>
 
 
 
@@ -419,7 +426,7 @@ Michael Pascale
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1737176400000" data-listing-file-modified-sort="1737236025071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1737176400000" data-listing-file-modified-sort="1755116297954" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
 <div class="thumbnail"><a href="../blog/20250118-keep-my-inbox-clean.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -427,10 +434,10 @@ Michael Pascale
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/20250118-keep-my-inbox-clean.html" class="no-external">Custom Retention Policy in Gmail Using AppScript</a>
+<a href="../blog/20250118-keep-my-inbox-clean.html" class="no-external">Keeping my Inbox Clean — With Software</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../blog/20250118-keep-my-inbox-clean.html" class="no-external"></a>
+<a href="../blog/20250118-keep-my-inbox-clean.html" class="no-external">A Custom Email Retention Policy for Gmail Using AppScript</a>
 </div>
 <div class="delink listing-description"><a href="../blog/20250118-keep-my-inbox-clean.html" class="no-external">
 There are several newsletters and promotional lists whose emails pollute my Gmail inbox. Although unsubscribing could easily solve this problem, there are certain companies…
