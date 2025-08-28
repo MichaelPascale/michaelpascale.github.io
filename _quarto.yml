@@ -6,12 +6,17 @@ website:
   title: Michael P. Pascale
   description: "This is a personal web space, blog, and portfolio site belonging to Michael Pascale, Programmer at the MGH Center for Addiction Medicine. Looking for software development or research services? Email an inquiry!"
   favicon: assets/chordata-rounded.png
+  open-graph:
+    image: https://static.psyc.dev/assets/og.png
+    image-alt: Michael Pascale is a doctoral student in the Brain Behavior Cognition Program at Boston University. His research seeks to explain why human beings exhibit curiosity.
+  twitter-card: true
   search: true
+  draft-mode: gone
   navbar:
     left:
       - text: "About Me"
         file: index.qmd
-      - text: "Publications"
+      - text: "CV"
         file: publications.qmd
       # - text: "Teaching"
       #   file: teaching.qmd
@@ -34,9 +39,16 @@ format:
   html:
     resources: assets/*
     theme: 
-      light: simplex
-      dark: darkly
+      light: [simplex, bsmod.scss]
+      dark: solar
     css: stylemod.css
     mainfont: Crimson Pro Light
     fontsize: 18pt
     page-layout: full
+    bibliography: assets/references.bib
+    csl: assets/neuron.csl
+    highlight-style:
+      light: gruvbox
+      dark: github
+    code-block-border-left: true
+    code-block-bg: true

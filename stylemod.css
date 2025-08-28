@@ -25,6 +25,14 @@ p {
     hyphens: manual;
 }
 
+code {
+    font-size: 12pt;
+}
+
+pre code {
+    font-size: 10pt;
+}
+
 .about-link {
     font-family: Ysabeau Regular;
     font-size: 7pt;

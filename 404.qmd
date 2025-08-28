@@ -1,0 +1,17 @@
+---
+pagetitle: Error 404 - Not Found
+title: Page Not Found (404)
+---
+<div class="container-fluid px-2 py-5">
+<div class="col-md-8">
+<p class="fs-3 text-warning">The page you were looking for could not be found.</p>
+<p>
+<ul>
+<li>Check that you typed the correct address and try again.</li>
+<li>It's possible that the page has moved. Try looking for it with the search bar.</li>
+</ul>
+</p>
+</div>
+<a href="index.qmd" class="btn btn-outline-warning btn-sm ms-3">Return to Home</a>
+</a>
+</div>
