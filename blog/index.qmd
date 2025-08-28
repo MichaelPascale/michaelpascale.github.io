@@ -1,6 +1,11 @@
 ---
-title: Blog
+title: Michael's WebLog
+# subtitle: Welcome to my [hypertext garden](https://maggieappleton.com/garden-history#the-early-gardens-of-hypertext)!
 listing:
   contents: "*.qmd"
   sort: "date desc"
 ---
+
+A blog (or the original [_weblog_](https://en.wikipedia.org/wiki/Blog#Origins), as I prefer) is something I see as a place for one to be themselves, through which to cultivate and refine themselves over time. As such, my prose here is often raw and unedited; you may find these writings to be more for me than for you. Nevertheless, I do still hope some of my activity may be useful or interesting to others.
+
+My blog posts are also living documents. That is, the published date reflects the date first published, though posts may have been modified since. [Link rot](https://en.wikipedia.org/wiki/Link_rot) irks me, so hopefully I'm keeping external references up to date --- I very much intend for URLs to work long into the future.
