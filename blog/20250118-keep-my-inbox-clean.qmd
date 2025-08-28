@@ -1,5 +1,6 @@
 ---
-title: Custom Retention Policy in Gmail Using AppScript
+title: Keeping my Inbox Clean --- With Software
+subtitle: A Custom Email Retention Policy for Gmail Using AppScript
 author: Michael Pascale
 date: 2025-01-18
 ---

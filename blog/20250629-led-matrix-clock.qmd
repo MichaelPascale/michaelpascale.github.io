@@ -1,0 +1,36 @@
+---
+title: A Simple LED Matrix Clock and Bulletin Board
+author: Michael Pascale
+date: 2025-06-29
+---
+
+My roommate and I saw a bulletin board in a coffee shop built on an LED matrix. Maybe it would be nice to design our own!
+
+![The final product. Wow it was hot out in June!](https://static.psyc.dev/assets/blog/20250629-led-matrix-clock/PXL_20250624_214411759.jpg)
+
+Our plan was to use a [Raspberry Pi 4B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) as the controller. We debated between an eInk and and LED matrix.
+
+| Item    | Critical Length (mm) | Critical Width (mm) | Description                                  | Link |
+|---------|----------------------|---------------------|----------------------------------------------|------|
+| Display | 192.00               | 192.00              | Square, 64x64, RGB LED Matrix                | [Amazon](https://www.amazon.com/Matrix-Raspberry-192x192-Adjustable-Brightness/dp/B0BYJHMFSQ) |
+| Display | 114.90               | 85.80               | 600x448, eInk, Color, 5.65", 50mW            | [Amazon](https://www.amazon.com/5-65inch-Display-Module-Compatible-Raspberry/dp/B08J7GGRYF) |
+
+The LED matrix was closer to the vibe we were going for, and it turned out to be much cheaper. Next we needed to find an appropriate frame.
+
+| Item    | Critical Length (mm) | Critical Width (mm) | Description                                  | Link |
+|---------|----------------------|---------------------|----------------------------------------------|------|
+| Frame   | 152.40               | 152.40              | Square, rounded edges, cherry                | [Amazon](https://www.amazon.com/Recuerdos-Picture-Natural-Tabletop-Display/dp/B0D2GSR9ZL) |
+| Frame   | 152.00               | 203.00              | Multiple Sizes and orientations, beechwood  | [Etsy](https://www.etsy.com/listing/1491592669/home-solid-beechwood-photo-frame-size) |
+| Frame   | 203.00               | 253.00              | Multiple Sizes and orientations, walnut     | [Etsy](https://www.etsy.com/listing/1340155281/hsh-solid-wood-picture-frame-rustic) |
+| Frame   | 254.00               | 127.00              | 5"x10" Floating Canvas Frame, Deep          | [Etsy](https://www.etsy.com/listing/1609523410/natural-hardwood-of-your-choice-in-deep) |
+| Frame   | 254.00               | 127.00              | 5"x10" Colorful wood                         | [Etsy](https://www.etsy.com/listing/264569810/vintage-color-of-your-choice-in-foxy) |
+
+So that we could collaboratively a draw pixel art icon set, I set up conditional formatting in a Google sheet such that the number in each cell determined the color. Then I wrote a Python script to convert the numeric matrix to a set of PNG images.
+
+![Pixel art in a Google Sheet using conditional formatting.](https://static.psyc.dev/assets/blog/20250629-led-matrix-clock/Screenshot_20250629_Graphics.png)
+
+Using the [LED Matrix driver written by Henner Zeller](https://github.com/hzeller/rpi-rgb-led-matrix), I wrote some code to pull weather information from OpenWeather at regular intervals and draw the date and time to the screen ([GitHub](https://github.com/MichaelPascale/rpi-rgb-led-matrix/tree/master/widgets)).
+
+![Might want to make those icons a little smaller...](https://static.psyc.dev/assets/blog/20250629-led-matrix-clock/PXL_20250102_012029837.jpg)
+
+Future additions may include rotating widgets in the right panel, specifically with data on train arrivals from the [MBTA's API](https://www.mbta.com/developers/v3-api).

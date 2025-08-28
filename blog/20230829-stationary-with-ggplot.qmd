@@ -2,9 +2,12 @@
 title: Creating Office Stationary in R with ggplot2
 author: Michael Pascale
 date: 2023-08-29
+fig-width: 11
+fig-height: 8.5
 ---
 
 Often when reaching a milestone --- say, just after the new year or upon starting a new job --- I spend (more than) a few hours of time excitedly putting together calendars and note-taking systems, in the name of reorganizing my life.
+
 While this behavior is usually little more than procrastination, cleverly disguised as efficiency and probably serving my instant gratification monkey more than my long term goals, I like to think that it is at least somewhat a process of iterative and creative self-improvement.
 Most times I engage in this _improvement_, I buy a few pens and notebooks, a whiteboard, index cards, or other physical writing formats.
 
@@ -12,3 +15,64 @@ Well, rather than spending hours of my life drawing, this time I decided to type
 
 The programming and graphics facilities provided by R make it an excellent choice for generation of scientific figures and reports. Certainly it wouldn't be difficult to print custom calendars too?
 
+```{r}
+suppressMessages({
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+library(purrr)
+})
+
+# Generate a 12-month calendar beginning in September.
+(ymd(20230901) %m+% months(0:11)) |>
+
+  # Calculate the first and last day of each month to be plotted.
+  map(\(start) list(month = month.name[month(start)], start = start, end = rollforward(start), year=year(start), days=day(rollforward(start)))) |>
+  bind_rows() |>
+
+  # Generate a row for each day of each month.
+  reframe(.by=c(month, year), day = seq_len(days)) |>
+
+  # For each day, list the date, weekday name, month name, etc. for plotting.
+  mutate(
+    date=ymd(paste(year, match(month, month.name), day)),
+    weekday=wday(date),
+    across(day, partial(factor, levels=31:1)),
+    across(month, partial(factor, levels=month.name))
+  ) |>
+
+  # Construct a calendar with months in columns and days in rows.
+  ggplot(aes(x=month, y=day, fill=weekday %in% c(1,7))) +
+  geom_tile(color='grey20') +
+
+  # Label each day with the day of week.
+  geom_text(
+    aes(label=(c('U', 'M', 'T', 'W', 'R', 'F' , 'S'))[weekday]),
+    position = position_nudge(y = 0.22, x = -0.42), 
+    size=2,
+    color='grey40'
+  ) +
+
+  # Include axis labels for day numbers and month names.
+  scale_y_discrete(breaks=c(1, 5*1:6, 31)) +
+  scale_x_discrete(position='top') +
+
+  # Shade weekends in a darker color.
+  scale_fill_manual(
+    values=c('TRUE'='antiquewhite3', 'FALSE'='antiquewhite1'), guide='none'
+  ) +
+
+  # Adjust labels and theme components.
+  facet_grid(cols=vars(year), switch='x', scales='free', space='free') +
+  theme_minimal() +
+  theme(
+    text = element_text(family='Palatino'),
+    axis.text = element_text(),
+    axis.title = element_blank(),
+    title=element_text(size=18),
+    plot.background = element_rect(fill='antiquewhite'),
+    panel.grid=element_blank(),
+    strip.text = element_text(size=12, face='bold')
+  ) +
+  labs(title = 'Academic Year 2023 - 2024')
+```
