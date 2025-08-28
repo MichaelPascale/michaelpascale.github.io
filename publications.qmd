@@ -1,15 +1,32 @@
 ---
-title: Research Contributions
+title: Curriculum Vitae
 date-modified: now
 modified-title: Last Generated
 ---
+
+### Education
+
+:::{.list-table header-rows=0 aligns=l,c}
+   * - **Doctoral Student: Psychology** (Current, Since 2023)\
+       PhD Program in Brain, Behavior, and Cognition
+     - []{rowspan=2} <a style="display: inline-block; padding-top: 2em;" href="https://www.bu.edu/psych/">Boston University</a>\
+       Graduate School of Arts and Sciences
+
+   * - **Master of Arts: Psychology** (2025)\
+       Conferred en route to PhD
+
+   * - **Bachelor of Science: Computer Science** (2020)\
+       Psychology and Mathematics Minors
+     - <a href="https://www.uml.edu/Sciences/computer-science/">University of Massachusetts Lowell</a>\
+       Kennedy College of Sciences
+:::
 
 ### Published Research
 
 ```{r}
 #| output: asis
 #| code-fold: true
-#| code-summary: "_Retrieved from [Google Scholar](https://scholar.google.com/citations?user=jSGgb-QAAAAJ) with the R Package [`scholar`](https://github.com/jkeirstead/scholar)._"
+#| code-summary: "_Retrieved from [Google Scholar](https://scholar.google.com/citations?user=jSGgb-QAAAAJ) with the R Package [`scholar`](https://github.com/jkeirstead/scholar). Click to expand code._"
 # Retrieve  publication entries from Google Scholar and sort chronologically.
 sid <- 'jSGgb-QAAAAJ'
 pubs <- scholar::get_publications(sid)
@@ -30,6 +47,22 @@ lst <- stringr::str_replace_all(lst, 'M(ichael)?\\s*(P|Philip)?\\s*Pascale', '__
 cat(lst)
 ```
 
+### Teaching
+
++-------------------------------------------+------------------------------+
+| **Introduction to Experimental Design**\  | Fall 2025\                   |
+| Graduate Teaching Fellow                  | CAS PS211, Boston University |
++-------------------------------------------+------------------------------+
+| **Drugs and Behavior**\                   | Spring 2025\                 |
+| Graduate Teaching Fellow                  | CAS PS333, Boston University |
++-------------------------------------------+------------------------------+
+| **Physiological Psychology**\             | Fall 2024\                   |
+| Graduate Teaching Fellow                  | CAS PS336, Boston University |
++-------------------------------------------+------------------------------+
+| **Introduction to Cognitive Psychology**\ | Spring 2024\                 |
+| Graduate Teaching Fellow                  | CAS PS231, Boston University |
++-------------------------------------------+------------------------------+
+
 ### Public Talks
 
 Wilford, M. M., Rabinovich, M., & Pascale, M. P. (2021, October 22). A demonstration of an interactive simulation of legal procedures. [Video](https://youtu.be/RleYRcLIwjQ)
@@ -37,11 +70,74 @@ Wilford, M. M., Rabinovich, M., & Pascale, M. P. (2021, October 22). A demonstra
 
 ### Poster Format
 
-Gilman, J. M., Schmitt, W. A., Potter, K., Kendzior, B., Pachas, G. N., Hickey, S., Pascale, M., & Evins, A. E. (2021). Identification of ∆9-tetrahydrocannabinol (THC) Impairment Using Functional Brain Imaging of Resting State Connectivity. 60th Annual Meeting of the American College of Neuropsychopharmacology.
+<i class="bi bi-people-fill"></i> denotes shared first author.
+<i class="bi bi-easel-fill"></i> denotes presenting author.
 
-Pascale, M., Ozana, N., Potter, K., Kendzior, B., Pachas, G. N., & Evins, A. E. (2022, September 15). Identification of ∆9-tetrahydrocannabinol (THC) impairment using resting-state neuroimaging. Mass General Neuroscience Day. [PDF](https://static.psyc.dev/assets/publications/Pascale et al. - 2022 - Identification of D9-tetrahydrocannabinol (THC) impairment using resting-state neuroimaging.pdf)
+<!-- Li, Y.- Inferring the time-dependent value of novel items -->
+
+Ahn, C., Do, Q., Bakst, L., Pascale, M., McGuire, J. T., Hasselmo, M. E., & Stern, C. E. (2024). What can errors in reasoning tell us about inductive biases in human abstract rule learning? Organization for Human Brain Mapping.
+
+Bakst, L., Ahn, C., Do, Q., Pascale, M., Stern, C. E., Hasselmo, M. E., & McGuire, J. T. (2024). Gaze patterns associated with efficient few-shot rule-learning. Society for Neuroeconomics Conference.
+
+Do, Q., Bakst, L., Ahn, C., Pascale, M., McGuire, J. T., Hasselmo, M. E., & Stern, C. E. (2024). A graph-theoretic approach to analyzing gaze data in a suite of abstract reasoning tasks. Society for Neuroscience Conference.
+
+<!-- Gilman, J. M., Schmitt, W. A., Potter, K., Kendzior, B., Pachas, G. N., Hickey, S., Pascale, M., & Evins, A. E. (2021). Identification of ∆9-tetrahydrocannabinol (THC) Impairment Using Functional Brain Imaging of Resting State Connectivity. 60th Annual Meeting of the American College of Neuropsychopharmacology. -->
+
+Pascale, M.^<i class="bi bi-easel-fill"></i>^, Ozana, N., Potter, K., Kendzior, B., Pachas, G. N., & Evins, A. E. (2022, September 15). Identification of ∆9-tetrahydrocannabinol (THC) impairment using resting-state neuroimaging. Mass General Neuroscience Day. [PDF](https://static.psyc.dev/assets/publications/Pascale et al. - 2022 - Identification of D9-tetrahydrocannabinol (THC) impairment using resting-state neuroimaging.pdf)
+
+Knoll, S. J. ^<i class="bi bi-people-fill"></i>^,  Pascale, M. P.^<i class="bi bi-people-fill"></i>^, Potter, K., Tervo-Clemmens, B., Ruiz, P. J., Torquati, M. S., Schuster, R. M. (2022, October). \it Changes in Symptoms of Depression and Anxiety with Transition Back to In-Person Learning Among Middle and High School Students. Massachusetts General Hospital Clinical Research Day. Boston, MA.
+
+Jashinski, J.^<i class="bi bi-people-fill"></i>^, Pascale, M.^<i class="bi bi-people-fill">&nbsp;</i><i class="bi bi-easel-fill"></i>^, Evohr, B., Potter K., Cather, C., Pachas, G. N., Grossman, E., Quaye, A., Schuster, R., Evins, A. E., \& Gilman, J. M. (2022, October). A randomized, pragmatic, waitlist-controlled trial of cannabis added to prescription opioid support on opioid dose reduction and pain in adults with chronic non-cancer pain: Baseline data. Massachusetts General Hospital Clinical Research Day. Boston, MA.
+
+Holcomb, J. M., Knoll, S. J., Pascale, M. P., Pachas, G. N., Torquati, M. S., Ruiz, P. J., Edgington, E. J., Gray, C. A., Maximus, D. R., Potter, K., \& Schuster, R. M. (2022, October). Characteristics of School-Based Youth in Distress and Connection to Mental Health Services in the Wake of COVID-19. Massachusetts General Hospital Clinical Research Day. Boston, MA.
 
 Sutherland, K., Smalarz, L., Wilford, M., Wang, Y., & Pascale, M. (2021). Does Knowledge of Coercive Plea Offers Reduce the Tendency to Infer Guilt from a Guilty Plea? [PDF](https://static.psyc.dev/assets/publications/Sutherland et al. - 2021 - Does Knowledge of Coercive Plea Offers Reduce the.pdf)
 
 Wilford, M. M., Rabinovich, M., & Pascale, M. P. (2022, August 6). Customizing an interactive simulation of legal procedures for both research and education.
 
+### Meeting Attendance
+
+- 2025 [Society for Neuroeconomics](https://neuroeconomics.org/2025-meeting/) (Boston, MA)
+- 2024 [Curiosity, Information Seeking, Exploration](https://ciseconf.github.io/CISE_2025/) (Providence, RI)
+- 2024 [Cognitive Computational Neuroscience](https://2024.ccneuro.org/) (Cambridge, MA)
+- 2024 Neuroscience of the Everyday World (Boston, MA)
+- 2024 New England Research on Decision Making (Cambridge, MA)
+
+### Previous Experience
+
++------------------------------------------------------------------------------------+-------------------------------+
+| **Massachusetts General Hospital**\                                                | Programmer\                   |
+| [Center For Addiction Medicine](http://www.mghaddictionmedicine.com/)              | March 2021 --- July 2023      |
++------------------------------------------------------------------------------------+-------------------------------+
+| **University of Massachusetts Lowell**\                                            | Programmer\                   |
+| [Applied Cognition Lab](https://mikowilford.wixsite.com/website-2)                 | May 2020 --- May 2021         |
++------------------------------------------------------------------------------------+-------------------------------+
+| **University of New Hampshire**\                                                   | Research Assistant\           |
+| [Affect, Cognition and Computation Lab](https://caitlinsmills.wixsite.com/acc-lab) | September 2020 --- March 2021 |
++------------------------------------------------------------------------------------+-------------------------------+
+| **University of Massachusetts Lowell**\                                            | Research Assistant\           |
+| [Applied Cognition Lab](https://mikowilford.wixsite.com/website-2)                 | January 2020 --- May 2020     |
++------------------------------------------------------------------------------------+-------------------------------+
+| **Teledyne Technologies Inc.**\                                                    | Software Engineer Intern\     |
+| [Teledyne DALSA](https://www.teledynedalsa.com/)                                   | June 2019 --- September 2019  |
++------------------------------------------------------------------------------------+-------------------------------+
+
+### Technical Skills
+
+-   **Computer Programming**\
+    R, JavaScript/TypeScript, Python, C/C++
+
+-   **Data Wrangling**\
+    Tidyverse, Excel, Pandas, SQL
+
+-   **Data Visualization**\
+    ggplot2, Three.js
+
+-   **Development Environments**\
+    Visual Studio Code, RStudio, Jupyter, MATLAB, JetBrains
+
+-   **Web Development**\
+    HTML/CSS, Shiny, Django, Vue, PHP, Express
+
+-   **Electronic Data Collection**\
+    REDCap, Qualtrics, PsychoPy, E-Prime

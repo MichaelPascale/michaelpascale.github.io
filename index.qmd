@@ -69,75 +69,16 @@ format:
 
 Hello! I am a doctoral student in the [Cognition and Decision Lab](https://sites.bu.edu/cdlab/) at Boston University.
 
-My research is concerned with decision-making in the context of &shy;human [information behavior](https://en.wikipedia.org/wiki/Information_behavior), which I approach from the perspective of computational cognitive neuroscience. This primarily includes &shy;[information seeking](https://en.wikipedia.org/wiki/Information_seeking) and exploration, two kinds of behavior which are influenced by &shy;curiosity, uncertainty, model-based learning, and valuation processes. &shy;On a broader scale, I am particularly interested how these aspects of individual psychology impact [social epistemology](https://en.wikipedia.org/wiki/Social_epistemology) and the acquisition of knowledge as a human [social endeavor](https://en.wikipedia.org/wiki/Sociology_of_scientific_knowledge).
+My research is concerned with human [information behavior](https://en.wikipedia.org/wiki/Information_behavior), which I approach from the perspective of computational cognitive neuroscience. Of particular interest to me are those [information seeking](https://en.wikipedia.org/wiki/Information_seeking) and exploratory behaviors which appear to be curiosity-driven.
 
-I also am an avid evangelist for the open source movement, contributing to Wikipedia and to software tools in the social sciences.
+Curiosity is a state of being with deep cultural significance [@papastephanou2019], attended to by many generations of philosophers and several generations of psychologists [@james1918] [@berlyne1954] [@loewenstein1994]. Only recently is it possible to integrate these efforts with cognitive neuroscience [@kidd2015] [@cervera2020], wherein the past fourty years[^3] of work has yielded insight into the neural underpinnings of motivation and decision-making. The study of curiosity brings up many questions evocative of [neuroepistemology](https://en.wikipedia.org/wiki/Neuroepistemology) [@churchland2004] and [neuroaesthetics](https://en.wikipedia.org/wiki/Neuroesthetics).
 
-## Education
+- How does our experience of curiosity, and the conditions under which we exhibit it, improve or impair our ability to find truth?
+- Why is it that particular information content or presentation promotes curious states more or less than others?
+- To what extent do nonhuman animals exhibit exploratory behavior that resembles human curiosity-driven behavior?
 
-:::{.list-table header-rows=0 aligns=l,c}
-   * - **Doctoral Student - Psychology (Current, Since 2023)**\
-       PhD Program in Brain, Behavior, and Cognition
-     - []{rowspan=2} <a style="display: inline-block; padding-top: 2em;" href="https://www.bu.edu/psych/">Boston University</a>\
-       Graduate School of Arts and Sciences
+On a broader scale, I am particularly interested how these aspects of individual psychology impact [social epistemology](https://en.wikipedia.org/wiki/Social_epistemology) and the acquisition of knowledge as a human [social endeavor](https://en.wikipedia.org/wiki/Sociology_of_scientific_knowledge).
 
-   * - **Master of Arts - Psychology (2025)**\
-       Conferred en route to PhD
+I also am an avid supporter of the open source movement, contributing to free texts and to software tools in the social sciences. Generally I welcome solicitations for tutoring or free software work.
 
-   * - **Bachelor of Science - Computer Science (2020)**\
-       Psychology and Mathematics Minors
-     - <a href="https://www.uml.edu/Sciences/computer-science/">University of Massachusetts Lowell</a>\
-       Kennedy College of Sciences
-:::
-
-## Previous Experience
-
-+------------------------------------------------------------------------------------+-------------------------------+
-| **Massachusetts General Hospital**\                                                | Programmer\                   |
-| [Center For Addiction Medicine](http://www.mghaddictionmedicine.com/)              | March 2021 --- July 2023      |
-+------------------------------------------------------------------------------------+-------------------------------+
-| **University of Massachusetts Lowell**\                                            | Programmer\                   |
-| [Applied Cognition Lab](https://mikowilford.wixsite.com/website-2)                 | May 2020 --- May 2021         |
-+------------------------------------------------------------------------------------+-------------------------------+
-| **University of New Hampshire**\                                                   | Research Assistant\           |
-| [Affect, Cognition and Computation Lab](https://caitlinsmills.wixsite.com/acc-lab) | September 2020 --- March 2021 |
-+------------------------------------------------------------------------------------+-------------------------------+
-| **University of Massachusetts Lowell**\                                            | Research Assistant\           |
-| [Applied Cognition Lab](https://mikowilford.wixsite.com/website-2)                 | January 2020 --- May 2020     |
-+------------------------------------------------------------------------------------+-------------------------------+
-| **Teledyne Technologies Inc.\                                                      | Software Engineer Intern\     |
-| **[Teledyne DALSA](https://www.teledynedalsa.com/)                                 | June 2019 --- September 2019  |
-+------------------------------------------------------------------------------------+-------------------------------+
-
-## Teaching
-
-+-------------------------------------------+------------------------------+
-| **Drugs and Behavior**\                   | Spring 2025\                 |
-| Graduate Teaching Fellow                  | CAS PS333, Boston University |
-+-------------------------------------------+------------------------------+
-| **Physiological Psychology**\             | Fall 2024\                   |
-| Graduate Teaching Fellow                  | CAS PS336, Boston University |
-+-------------------------------------------+------------------------------+
-| **Introduction to Cognitive Psychology**\ | Spring 2024\                 |
-| Graduate Teaching Fellow                  | CAS PS231, Boston University |
-+-------------------------------------------+------------------------------+
-
-## Technical Skills
-
--   **Computer Programming**\
-    R, JavaScript, C, C++, Python
-
--   **Data Wrangling**\
-    Tidyverse, Excel, Pandas, SQL
-
--   **Data Visualization**\
-    ggplot2, Three.js
-
--   **Development Environments**\
-    Visual Studio Code, RStudio, Jupyter, MATLAB, JetBrains
-
--   **Web Development**\
-    HTML/CSS, Shiny, Django, Vue, PHP, Express
-
--   **Electronic Data Collection**\
-    REDCap, Qualtrics, PsychoPy, E-Prime
+[^3]: Approximating the field's beginning as marked in 1989 with the first issue of the _Journal of Cognitive Neuroscience_.
