@@ -25,6 +25,16 @@ p {
     hyphens: manual;
 }
 
+@media (max-width: 991.98px) {
+  p {
+    text-align: left;
+  }
+
+  div.quarto-about-solana .about-entity {
+    text-align: left !important;
+  }
+}
+
 code {
     font-size: 12pt;
 }
