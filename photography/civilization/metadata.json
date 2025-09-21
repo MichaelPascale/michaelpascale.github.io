@@ -1,0 +1,31 @@
+{
+	"collection": "Civilization and its Artifacts",
+	"description": "How does architecture reflect what we value? Where does natural beauty find itself in human cities? What framings occur spontaneously in the niches of society?",
+	"order": 10,
+	"images": [
+		{
+			"filename": "PXL_20240814_110550533~3.jpg",
+			"sha256sum": "7fcba7cb3db5933dfd3d2409fe29126e397b2fc47bc3a8988f2e5a52e1cf32ca",
+			"title": "Untitled",
+			"description": "",
+			"camera": "Google Pixel 7a",
+			"location": ""
+		},
+		{
+			"filename": "Y28897004755-R1-054-25A.jpg",
+			"sha256sum": "c8bdc538774586689554b51cd7357f402ad9b525cd920f2a5833f22fb5cfa499",
+			"title": "Untitled",
+			"description": "",
+			"camera": "Minolta X-700",
+			"location": ""
+		},
+		{
+			"filename": "original_4fbfe125-94c1-4b41-916b-e4e464a385bd_PXL_20240810_151958373~2.jpg",
+			"sha256sum": "44d56fd49ed2fa0b19c38cd7c3588ba4ccb00a8a115a6d283cace2bada74a7b1",
+			"title": "Untitled",
+			"description": "",
+			"camera": "Google Pixel 7a",
+			"location": ""
+		}
+	]
+}

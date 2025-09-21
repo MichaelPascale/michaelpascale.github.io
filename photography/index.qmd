@@ -1,0 +1,113 @@
+---
+title: Photography
+draft: false
+# listing:
+#   contents: "*.png"
+#   # sort: "date desc"
+#   # fields: [image, date]
+# lightbox:
+#   match: auto
+#   effect: fade
+#   loop: true
+#   desc-position: right
+
+# include-in-header: 
+#   text: |
+#     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css" integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+#     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.esm.min.js" integrity="sha512-AyqbkQ0CCFXttmj38AAryPYIKEOdL6lApyzLje2dyvMwLoHv7PPXIeKS86gF4V85Gv+ZsCiOSP0yHaCXcemmaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+#     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe-lightbox.esm.min.js" integrity="sha512-S9RkWnGja84tXKFxTN7iLVP3pUCsnfqnF+0ZK2CSOhmCqa6lxoutHUoizBVnqCIsH8HW7e/3u9HEOOwlR01TLA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+#     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe-lightbox.umd.min.js" integrity="sha512-D16CBrIrVF48W0Ou0ca3D65JFo/HaEAjTugBXeWS/JH+1KNu54ZOtHPccxJ7PQ44rTItUT6DSI6xNL+U34SuuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+#     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe.umd.min.js" integrity="sha512-BXwwGU7zCXVgpT2jpXnTbioT9q1Byf7NEXVxovTZPlNvelL2I/4LjOaoiB2a19L+g5za8RbkoJFH4fMPQcjFFw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+# include-after-body:
+#   text: |
+#     // Include Lightbox 
+#     import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
+
+#     const lightbox = new PhotoSwipeLightbox({
+#       // may select multiple "galleries"
+#       gallery: '#gallery',
+
+#       // Elements within gallery (slides)
+#       children: 'a',
+
+#       // setup PhotoSwipe Core dynamic import
+#       pswpModule: () => import('/photoswipe/photoswipe.esm.js')
+#     });
+#     lightbox.init();
+format: 
+  html:
+    page-layout: custom
+include-in-header: 
+  text: |
+    <style>
+    #gallery {
+    width: 100%;
+    }
+    #quarto-content {
+      width: 80vw;
+      margin: auto;
+    }
+    .callout {
+    padding-top: 0 !important;
+    max-width: 1200px;
+    }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.min.js" integrity="sha512-n02TbYimj64qb98ed5WwkNiSw/i9Xlvv4Ehvhg0jLp3qMAMWCYUHbOMbppZ0vimtyiyw9NqNqxUZC4hq86f4aQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery-bundle.min.css" integrity="sha512-fXavT4uA4L0uTUFHC275D7zd751ohbSuD6VUMc5JysWfmR+NxTI3w7etE7N9hjTETcoh0w0V+24Cel4xXnqvCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lg-zoom.min.css" integrity="sha512-S/hU6dGSK3D7SRpCvRF/IEufIr6Ikgp5vDiJarhdeFGEnw36hWZ6gVBjnwBbzjA+NEP7D8Gdm+5LL1HEsyiB1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lg-fullscreen.min.css" integrity="sha512-JlgW3xkdBcsdFiSfFk5Cfj3sTgo3hA63/lPmZ4SXJegICSLcH43BuwDNlC9fqoUy2h3Tma8Eo48xlZ5XMjM+aQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lg-thumbnail.min.css" integrity="sha512-rKuOh3xlF/027KUPuMok0ESsZ2zWPRzkniD3n5zZKCAtbiVkYw66DR4KtVAGf8dLPLr5DdyQs05BlSmEyXctkQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lg-pager.min.css" integrity="sha512-F4gJy0MBz7nwvFMIYNeap+CXaVQY0Y9pwsn/Up4mvOfjYD50u+8D7jIVZBkeHV7hZ2xjhY8uJRMkRzWQBvznRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/fullscreen/lg-fullscreen.min.js" integrity="sha512-d/EbIxiQq9RUy7FPFpf782bw3OQKXR90SwMSiNorOP5En9rbpnSDzkJZXpSKLBCNMmdSd5UOeWzYUIStpack6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/pager/lg-pager.min.js" integrity="sha512-Xq5s/hZuM130Q8GMlIhnAk0n6tqPBPAZF7hcCX19bDBwHglGTTp7vES1PggSwUmdiGjyp2sEudUrMOv/ss1aqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-jZxB8WysJ6S6e4Hz5IZpAzR1WiflBl0hBxriHGlLkUN32T18+rD1aLNifa1KTll/zx8lIfWVP1NqEjHi/Khy5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/zoom/lg-zoom.min.js" integrity="sha512-fwxc/NvaA3du4ZRE6J/Ilrqi2xwOB1QfHBR4neA+ha13/pkweiRfPgBiV4VbfAf/Vi3rXAXdQ3zexUJ1V2bWrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+include-after-body: 
+  text: |
+    <script>
+      // FIXME: gallery per subject
+      lightGallery(
+          document.getElementById("gallery"),
+          {
+            thumbnail: true,
+            pager: true
+          }
+      );
+      </script>
+---
+
+::: {.callout-note}
+## Notice
+
+All images on this page are Copyright © 2025 by Michael Pascale and are licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"/><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"/><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"/><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"/>
+:::
+
+```{r}
+#| output: asis
+#| echo: false
+collections <- list.dirs()
+
+display <- c()
+ordering <- c()
+for (collection in dir(pattern='metadata.json', recursive=TRUE)) {
+  directory <- dirname(collection)
+  metadata <- jsonlite::read_json(collection)
+
+  text <- paste0('<h3>', metadata$collection, '</h3>\n', '<p>', metadata$description, '</p>\n')
+  text <- paste0(text, '<div id="gallery-', directory, '">')
+
+  for (image in metadata$images) {
+    text <- paste0(text, '<a href="', directory, '/', image$filename, '"><img src="thumbs/', image$filename, '" group="', directory, '"></a>')
+  }
+
+  text <- paste0(text, '</div>')
+
+  display <- append(display, text)
+  ordering <- append(ordering, metadata$order)
+}
+
+cat(paste(display[order(ordering)], collapse='\n\n'))
+```

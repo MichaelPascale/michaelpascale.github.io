@@ -1,0 +1,35 @@
+{
+	"collection": "Symbols of Resistance and Togetherness",
+	"description": "These images juxtapose symbols of hope, protest, and unity.",
+	"date": "2025-06-14",
+	"order": 0,
+	"images": [
+		{
+			"filename": "000067900019.jpg",
+			"sha256sum": "3486e4a6215274f39975d6f27df0f575c154c29717f4a3936b3450b29003f4b9",
+			"title": "Love Wins",
+			"description": "",
+			"camera": "Minolta X-700",
+			"film": "",
+			"location": "_No Kings, but Yaaaas Queen!_ (Boston, MA)"
+		},
+		{
+			"filename": "000067900027.jpg",
+			"sha256sum": "52dab0a742f4bf78ff4939d8271349678150318d43fba9f4e3633ec5ccb63a17",
+			"title": "Hope, Vibrance",
+			"description": "",
+			"camera": "Minolta X-700",
+			"film": "",
+			"location": "_No Kings, but Yaaaas Queen!_ (Boston, MA)"
+		},
+		{
+			"filename": "000067900026.jpg",
+			"sha256sum": "273ddc23e72bf19a23b8d03d7105ab0d0294b01dea7098732ba5ef251669cf7c",
+			"title": "It takes all kinds ",
+			"description": "",
+			"camera": "Minolta X-700",
+			"film": "",
+			"location": "_No Kings, but Yaaaas Queen!_ (Boston, MA)"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"collection": "The Messages we Inscribe on our Institutions",
+	"description": "Symbols of institutional values appear engraved on our buildings. Do we live up to these values? Do we try to?",
+	"order": 1,
+	"images": [
+		{
+			"filename": "Y20345005559-R1-E025.jpg",
+			"sha256sum": "60d57aad18e73b988dd5067553067792d23295be1657c7d96d057669a21ce397",
+			"title": "Public Spirit",
+			"description": "Inscribed around the facade of the Boston Public Library McKim building are, in my interpretation, 1) an acknowledgement of the public spirit of its founders 2) a dedication to the 'advancement of learning' and 3) a reflection that the preservation of free society in Massachusetts will require education of the public.",
+			"camera": "Minolta X-700",
+			"film": "Fujifilm 4?00 (C-41)",
+			"location": "Boston Public Library (Boston, MA)"
+		},
+		{
+			"filename": "Y20345005559-R1-E037-2.jpg",
+			"sha256sum": "bb0d74452bf99a8d8e94bb2bc9b2b5d3da61275a4934a3ba2d9d528a05e4380f",
+			"title": "Academic Dedication",
+			"camera": "Minolta X-700",
+			"film": "Fujifilm 4?00 (C-41)",
+			"location": "Picower Institute for Learning and Memory (Cambridge, MA)"
+		},
+		{
+			"filename": "Y28897004755-R1-064-30A.jpg",
+			"sha256sum": "0d576b45bd9a9c2546d50115a8e0e491b7eec08cdd4dcfa6661ce4f8aeceda79",
+			"title": "Why we Design",
+			"camera": "Minolta X-700",
+			"film": "",
+			"location": "(Boston, MA)"
+		}
+	]
+}
